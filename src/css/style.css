@@ -1,0 +1,824 @@
+/* ─── Miljonimäng — Dark Glassmorphism Theme ─────────────── */
+
+:root {
+  --slate-950: #020617;
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --indigo: #6366f1;
+  --indigo-glow: rgba(99,102,241,0.15);
+  --amber: #f59e0b;
+  --amber-glow: rgba(245,158,11,0.2);
+  --emerald: #10b981;
+  --emerald-glow: rgba(16,185,129,0.2);
+  --red: #ef4444;
+  --red-glow: rgba(239,68,68,0.2);
+  --card-bg: rgba(30,41,59,0.6);
+  --card-border: rgba(51,65,85,0.5);
+  --card-radius: 16px;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --shadow-card: 0 8px 32px rgba(2,6,23,0.4);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--slate-900);
+  color: var(--slate-300);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  overflow-x: hidden;
+}
+
+/* ─── Background particles ───────────────────────────── */
+#particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(99,102,241,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(16,185,129,0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(245,158,11,0.04) 0%, transparent 50%);
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+}
+
+.container { width: 100%; }
+
+/* ─── Loading ────────────────────────────────────────── */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px;
+  gap: 20px;
+  color: var(--slate-400);
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--slate-700);
+  border-top-color: var(--indigo);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ─── Menüü — Bento Grid ─────────────────────────────── */
+
+.menu-header {
+  text-align: center;
+  padding: 48px 20px 32px;
+}
+
+.game-title {
+  font-family: var(--font-sans);
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--indigo), var(--amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  color: var(--slate-400);
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 0 4px;
+}
+
+.bento-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: 28px 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+  color: var(--slate-300);
+  font-family: var(--font-sans);
+}
+
+.bento-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--card-accent, var(--indigo)), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--card-accent, var(--indigo));
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 20px var(--card-accent-glow, var(--indigo-glow));
+}
+
+.bento-card:hover::before { opacity: 0.08; }
+
+.bento-card:focus {
+  outline: 2px solid var(--indigo);
+  outline-offset: 2px;
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-id {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--card-accent, var(--indigo));
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  position: relative;
+  z-index: 1;
+}
+
+/* Assignment type colors */
+.card-type-kalkulaator { --card-accent: var(--indigo); --card-accent-glow: var(--indigo-glow); }
+.card-type-andmete-kuvamine { --card-accent: var(--emerald); --card-accent-glow: var(--emerald-glow); }
+.card-type-tekstiotsing { --card-accent: var(--amber); --card-accent-glow: var(--amber-glow); }
+.card-type-testimine { --card-accent: #a855f7; --card-accent-glow: rgba(168,85,247,0.2); }
+
+/* ─── Mänguvaade ─────────────────────────────────────── */
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.question-counter {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--indigo);
+}
+
+.score-display {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--amber);
+}
+
+.btn-quit {
+  background: transparent;
+  color: var(--slate-400);
+  border: 1px solid var(--slate-700);
+  border-radius: 8px;
+  padding: 7px 16px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-family: var(--font-sans);
+}
+
+.btn-quit:hover {
+  border-color: var(--red);
+  color: var(--red);
+  box-shadow: 0 0 12px var(--red-glow);
+}
+
+/* ─── Õlekõrred ──────────────────────────────────────── */
+
+.lifelines {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 10px 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.lifeline-btn {
+  background: rgba(99,102,241,0.08);
+  color: var(--indigo);
+  border: 1px solid rgba(99,102,241,0.25);
+  border-radius: 10px;
+  padding: 9px 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  font-family: var(--font-sans);
+  min-width: 80px;
+}
+
+.lifeline-btn:hover:not(:disabled) {
+  background: rgba(99,102,241,0.2);
+  border-color: var(--indigo);
+  transform: scale(1.04);
+  box-shadow: 0 0 16px var(--indigo-glow);
+}
+
+.lifeline-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  border-color: var(--slate-700);
+}
+
+/* ─── Küsimuse ala ────────────────────────────────────── */
+
+.question-area {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.question-level {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--slate-600);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.question-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--slate-300);
+}
+
+/* ─── Vastusevariandid ───────────────────────────────── */
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.option-btn {
+  display: flex;
+  align-items: center;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+  color: var(--slate-300);
+  font-size: 0.95rem;
+  text-align: left;
+  width: 100%;
+  font-family: var(--font-sans);
+  gap: 14px;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: var(--indigo);
+  background: rgba(99,102,241,0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 12px var(--indigo-glow);
+}
+
+.option-btn:focus {
+  outline: 2px solid var(--indigo);
+  outline-offset: 2px;
+}
+
+.option-btn:disabled { cursor: default; }
+
+.option-btn.correct {
+  background: rgba(16,185,129,0.15);
+  border-color: var(--emerald);
+  box-shadow: 0 0 16px var(--emerald-glow);
+}
+
+.option-btn.wrong {
+  background: rgba(239,68,68,0.15);
+  border-color: var(--red);
+  box-shadow: 0 0 16px var(--red-glow);
+}
+
+.option-btn.eliminated {
+  background: transparent;
+  border-color: transparent;
+  opacity: 0.15;
+}
+
+.option-letter {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(99,102,241,0.1);
+  color: var(--indigo);
+  flex-shrink: 0;
+}
+
+.option-text { flex: 1; }
+
+/* ─── Tagasiside ──────────────────────────────────────── */
+
+.feedback-area { margin-top: 4px; }
+
+.feedback {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: var(--shadow-card);
+  animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.feedback-correct { border-color: var(--emerald); }
+.feedback-wrong { border-color: var(--red); }
+
+.feedback-icon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.feedback-correct .feedback-icon { color: var(--emerald); }
+.feedback-wrong .feedback-icon { color: var(--red); }
+
+.feedback-text { flex: 1; }
+
+.feedback-text strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.05rem;
+}
+
+.feedback-correct .feedback-text strong { color: var(--emerald); }
+.feedback-wrong .feedback-text strong { color: var(--red); }
+
+.feedback-text p {
+  color: var(--slate-400);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.btn-next {
+  background: var(--indigo);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  font-family: var(--font-sans);
+}
+
+.btn-next:hover {
+  background: #4f46e5;
+  box-shadow: 0 0 16px var(--indigo-glow);
+  transform: translateY(-1px);
+}
+
+/* ─── Tulemuse vaade ─────────────────────────────────── */
+
+.result-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 48px 40px;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+  margin-top: 40px;
+  animation: fadeIn 0.4s ease;
+}
+
+.result-emoji { font-size: 4rem; margin-bottom: 12px; }
+
+.result-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--slate-300);
+}
+
+.result-score {
+  font-family: var(--font-mono);
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--indigo), var(--amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 28px;
+}
+
+.result-details {
+  background: rgba(15,23,42,0.5);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 28px;
+  border: 1px solid var(--card-border);
+}
+
+.result-details p {
+  margin: 6px 0;
+  color: var(--slate-400);
+  font-size: 0.95rem;
+}
+
+.result-details strong {
+  color: var(--slate-300);
+  font-weight: 600;
+}
+
+.result-actions { display: flex; gap: 12px; justify-content: center; }
+
+.btn-primary {
+  background: var(--indigo);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  font-family: var(--font-sans);
+}
+
+.btn-primary:hover {
+  background: #4f46e5;
+  box-shadow: 0 0 20px var(--indigo-glow);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--slate-300);
+  border: 1px solid var(--slate-700);
+  border-radius: 10px;
+  padding: 14px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  font-family: var(--font-sans);
+}
+
+.btn-secondary:hover {
+  border-color: var(--indigo);
+  color: var(--indigo);
+  box-shadow: 0 0 16px var(--indigo-glow);
+}
+
+/* ─── Vihje / Publiku popup ──────────────────────────── */
+
+.hint-popup,
+.audience-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeIn 0.2s ease;
+}
+
+.hint-content,
+.audience-content {
+  background: var(--slate-800);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 60px rgba(0,0,0,0.5);
+  animation: slideUp 0.25s ease;
+}
+
+.hint-label,
+.audience-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--indigo);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hint-content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: var(--slate-300);
+}
+
+/* ─── Publiku hääletus ───────────────────────────────── */
+
+.audience-bars { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+
+.audience-bar-container { display: flex; align-items: center; gap: 10px; }
+
+.audience-bar-label {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 24px;
+  text-align: center;
+  color: var(--slate-400);
+}
+
+.audience-bar-track {
+  flex: 1;
+  height: 22px;
+  background: var(--slate-700);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.audience-bar-fill {
+  height: 100%;
+  background: var(--slate-600);
+  border-radius: 11px;
+  transition: width 1s cubic-bezier(0.4,0,0.2,1);
+  min-width: 2%;
+}
+
+.audience-bar-fill.bar-correct { background: linear-gradient(90deg, var(--emerald), #34d399); }
+
+.audience-bar-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.85rem;
+  min-width: 40px;
+  text-align: right;
+  color: var(--slate-400);
+}
+
+.btn-small {
+  background: transparent;
+  color: var(--slate-300);
+  border: 1px solid var(--slate-700);
+  border-radius: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-family: var(--font-sans);
+}
+
+.btn-small:hover {
+  border-color: var(--indigo);
+  color: var(--indigo);
+}
+
+/* ─── Ülesande info ──────────────────────────────────────── */
+
+.info-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: var(--shadow-card);
+  margin-top: 24px;
+  animation: fadeIn 0.3s ease;
+}
+
+.btn-back {
+  background: transparent;
+  color: var(--slate-400);
+  border: 1px solid var(--slate-700);
+  border-radius: 8px;
+  padding: 8px 18px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-family: var(--font-sans);
+  margin-bottom: 28px;
+}
+
+.btn-back:hover {
+  border-color: var(--indigo);
+  color: var(--indigo);
+}
+
+.info-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.info-icon { font-size: 3rem; margin-bottom: 12px; }
+
+.info-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--slate-300);
+  margin-bottom: 6px;
+}
+
+.info-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--indigo);
+  background: rgba(99,102,241,0.12);
+  padding: 3px 12px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.info-section {
+  margin-bottom: 28px;
+}
+
+.info-section-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--slate-500);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.info-description {
+  color: var(--slate-400);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.info-filename {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--slate-500);
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  background: rgba(15,23,42,0.5);
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.code-block {
+  background: rgba(2,6,23,0.8);
+  border: 1px solid var(--slate-700);
+  border-radius: 10px;
+  padding: 18px 20px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--slate-300);
+  max-height: 280px;
+}
+
+.code-block code { font-family: inherit; white-space: pre; }
+
+.info-actions {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.btn-start {
+  font-size: 1.1rem;
+  padding: 16px 40px;
+}
+
+/* ─── Veateade ────────────────────────────────────────── */
+
+.error-card {
+  border: 1px solid var(--red);
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  border-radius: var(--card-radius);
+  padding: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.error-text {
+  color: var(--red);
+  margin: 16px 0;
+  font-size: 1.1rem;
+}
+
+/* ─── Responsiivsus ───────────────────────────────────── */
+
+@media (max-width: 640px) {
+  body { padding: 12px; }
+
+  .bento-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+
+  .menu-header { padding: 32px 12px 24px; }
+
+  .game-title { font-size: 2rem; }
+
+  .bento-card { padding: 20px 16px; }
+
+  .card-icon { font-size: 1.8rem; }
+  .card-title { font-size: 0.85rem; }
+
+  .options-grid { grid-template-columns: 1fr; gap: 8px; }
+
+  .game-header { flex-wrap: wrap; gap: 6px; justify-content: center; padding: 10px 14px; }
+
+  .lifelines { flex-wrap: wrap; gap: 6px; padding: 8px 12px; }
+
+  .lifeline-btn { min-width: 70px; padding: 8px 14px; font-size: 0.8rem; }
+
+  .question-area { padding: 24px 18px; }
+  .question-text { font-size: 1.1rem; }
+
+  .result-card { padding: 32px 20px; }
+  .result-score { font-size: 2.2rem; }
+
+  .result-actions { flex-direction: column; gap: 10px; }
+
+  .feedback { flex-direction: column; align-items: center; text-align: center; }
+}
