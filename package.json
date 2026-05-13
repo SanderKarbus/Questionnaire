@@ -1,0 +1,11 @@
+{
+  "name": "miljonimang",
+  "version": "1.0.0",
+  "description": "Miljonimäng - kontrolli, kas saad ülesande lahendusest aru",
+  "scripts": {
+    "generate": "node scripts/generate-questions.js",
+    "build": "node scripts/generate-questions.js"
+  },
+  "keywords": ["millionaire", "quiz", "education"],
+  "license": "MIT"
+}

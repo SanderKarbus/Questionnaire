@@ -1,0 +1,5 @@
+python: Python on kõrgetasemeline programmeerimiskeel, mida kasutatakse veebiarenduses, andmeteaduses ja AI-s.
+javascript: JavaScript on veebilehtedele interaktiivsust lisav programmeerimiskeel.
+html: HTML on hüperteksti märgistuskeel, millega luuakse veebilehtede struktuur.
+tsükkel: Tsükkel (loop) võimaldab korrata koodiplokki mitu korda.
+funktsioon: Funktsioon on koodiplokk, mis täidab kindlat ülesannet ja mida saab välja kutsuda.

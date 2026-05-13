@@ -1,0 +1,7 @@
+[
+  { "nimi": "Mari Maasikas", "vanus": 25, "linn": "Tallinn" },
+  { "nimi": "Jaan Jõesaar", "vanus": 30, "linn": "Tartu" },
+  { "nimi": "Kati Karu", "vanus": 22, "linn": "Pärnu" },
+  { "nimi": "Peeter Põder", "vanus": 35, "linn": "Narva" },
+  { "nimi": "Liisa Lepatriinu", "vanus": 28, "linn": "Viljandi" }
+]
