@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "question": "Kuidas lisada elementi Pythoni loendisse?",
+    "options": [
+      "add()",
+      "insert()",
+      "append()",
+      "push()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "append lisab elemendi loendi lõppu."
+  },
+  {
+    "id": 2,
+    "level": 1,
+    "question": "Mis tüüpi on Pythonis väärtus \"hello\"?",
+    "options": [
+      "list",
+      "str",
+      "int",
+      "bool"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "str = string = tekst."
+  },
+  {
+    "id": 3,
+    "level": 1,
+    "question": "Kuidas kontrollida, kas muutuja on teatud tüüpi Pythonis?",
+    "options": [
+      "isinstance()",
+      "typeof()",
+      "isType()",
+      "typecheck()"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "isinstance kontrollib, kas objekt on etteantud tüüpi."
+  },
+  {
+    "id": 4,
+    "level": 1,
+    "question": "Millist andmestruktuuri kasutatakse võtme-väärtus paaride hoidmiseks Pythonis?",
+    "options": [
+      "Sõnastik (dict)",
+      "Ennik (tuple)",
+      "Loend (list)",
+      "Hulk (set)"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Selles struktuuris on igal võtmel vastav väärtus."
+  },
+  {
+    "id": 5,
+    "level": 2,
+    "question": "Mida teeb Pythonis .strip() meetod?",
+    "options": [
+      "Lisab sõnele tühikud",
+      "Muudab sõne suurtähtedeks",
+      "Kustutab kogu sõne",
+      "Eemaldab sõne algusest ja lõpust tühikud ja reavahetused"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Strip tähendab eemaldama."
+  },
+  {
+    "id": 6,
+    "level": 2,
+    "question": "Mis on Pythonis sõnastiku (dict) võtme ja väärtuse vahe?",
+    "options": [
+      "Vahet pole",
+      "Võti on unikaalne identifikaator, väärtus on sellega seotud info",
+      "Võti on väärtus ja väärtus on võti",
+      "Võti on alati number, väärtus on tekst"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Sõnastik on nagu päris sõnaraamat – märksõna ja seletus."
+  },
+  {
+    "id": 7,
+    "level": 2,
+    "question": "Kuidas kommenteerida mitut rida Pythonis?",
+    "options": [
+      "Nurksulgudega [ ]",
+      "Kolme jutumärgiga \"\"\" \"\"\"",
+      "Kahe kaldkriipsuga //",
+      "Trelliga #"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Kolme jutumärki kasutatakse mitmerealise kommentaari jaoks."
+  },
+  {
+    "id": 8,
+    "level": 2,
+    "question": "Kuidas ühendada kaks sõne Pythonis?",
+    "options": [
+      "+ operaatoriga",
+      "& operaatoriga",
+      "merge() funktsiooniga",
+      "concat() funktsiooniga"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Sama operaator nagu arvude liitmisel."
+  },
+  {
+    "id": 9,
+    "level": 3,
+    "question": "Kuidas lugeda Pythonis faili?",
+    "options": [
+      "getFile() ja read()",
+      "load() ja read()",
+      "open() ja read()",
+      "file() ja read()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "open() avab faili, read() loeb selle sisu."
+  },
+  {
+    "id": 10,
+    "level": 3,
+    "question": "Mida teeb Pythonis def võtmesõna?",
+    "options": [
+      "Kustutab objekti",
+      "Defineerib muutuja",
+      "Määrab vaikeväärtuse",
+      "Defineerib funktsiooni"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "def = define."
+  },
+  {
+    "id": 11,
+    "level": 3,
+    "question": "Mis vahe on loendil (list) ja ennikul (tuple) Pythonis?",
+    "options": [
+      "Mõlemad on muudetavad",
+      "Kumbki pole muudetav",
+      "Ennikut saab muuta, loendit ei saa",
+      "Loendit saab muuta, ennikut ei saa"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "List on muudetav, tuple on muutumatu."
+  },
+  {
+    "id": 12,
+    "level": 3,
+    "question": "Mida teeb Pythonis funktsioon range(5)?",
+    "options": [
+      "Loob tühja loendi",
+      "Loob numbrite jada 0-st 4-ni",
+      "Loob numbrite jada 1-st 5-ni",
+      "Tagastab arvu 5"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "range() genereerib arvude jada."
+  },
+  {
+    "id": 13,
+    "level": 4,
+    "question": "Kuidas kuvada Pythonis midagi ekraanile?",
+    "options": [
+      "print()",
+      "display()",
+      "write()",
+      "echo()"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "See funktsioon väljastab teksti konsooli."
+  },
+  {
+    "id": 14,
+    "level": 4,
+    "question": "Kuidas lõpetada tsükklit Pythonis enneaegselt?",
+    "options": [
+      "stop",
+      "break",
+      "end",
+      "exit"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "See võtmesõna katkestab tsükli."
+  },
+  {
+    "id": 15,
+    "level": 4,
+    "question": "Kuidas küsida Pythonis kasutajalt sisendit?",
+    "options": [
+      "prompt()",
+      "read()",
+      "ask()",
+      "input()"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "See funktsioon ootab, et kasutaja midagi kirjutaks."
+  },
+  {
+    "id": 16,
+    "level": 4,
+    "question": "Mida teeb funktsioon len() Pythonis?",
+    "options": [
+      "Kustutab muutuja",
+      "Teisendab teksti arvuks",
+      "Tagastab sõne või loendi pikkuse",
+      "Loob uue loendi"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "len = length, pikkus."
+  },
+  {
+    "id": 17,
+    "level": 5,
+    "question": "Mida teeb Pythonis operaator ==?",
+    "options": [
+      "Omistab väärtuse muutujale",
+      "Tagastab tüübi",
+      "Võrdleb kahte väärtust",
+      "Kontrollib, kas väärtus on sama objekt"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Kahekordne võrdusmärk on võrdlusoperaator."
+  },
+  {
+    "id": 18,
+    "level": 5,
+    "question": "Kuidas avada faili kirjutamise režiimis Pythonis?",
+    "options": [
+      "open(\"fail.txt\", \"a\")",
+      "write(\"fail.txt\")",
+      "open(\"fail.txt\", \"r\")",
+      "open(\"fail.txt\", \"w\")"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "\"w\" = write (kirjuta)."
+  },
+  {
+    "id": 19,
+    "level": 5,
+    "question": "Mida tähendab Pythonis \"i\" for-tsüklis nagu \"for i in range(5)\"?",
+    "options": [
+      "Veateade",
+      "Funktsiooni nimi",
+      "Konstant, mis on alati 1",
+      "Tsüklimuutuja, mis võtab iga iteratsiooniga uue väärtuse"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "i on tavaline muutujanimi, mis saab väärtuse range() jadast."
+  },
+  {
+    "id": 20,
+    "level": 6,
+    "question": "Mis vahe on return ja print vahel Pythonis?",
+    "options": [
+      "Mõlemad teevad sama asja",
+      "print annab väärtuse tagasi, return kuvab",
+      "return töötab ainult tsüklites",
+      "return annab väärtuse funktsioonist tagasi, print kuvab ekraanile"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Üks neist lõpetab funktsiooni, teine lihtsalt väljastab."
+  },
+  {
+    "id": 21,
+    "level": 6,
+    "question": "Miks kasutada else-lauset if-ga koos?",
+    "options": [
+      "Et katkestada programm",
+      "Et määrata, mis juhtub siis, kui tingimus ei ole tõene",
+      "Et tsükkel jätkuks",
+      "Et lisada veel üks tingimus"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Else tähendab \"muidu\"."
+  },
+  {
+    "id": 22,
+    "level": 6,
+    "question": "Miks kasutatakse while True tsüklit vestlusrobotites?",
+    "options": [
+      "Et programm ootaks kasutaja sisendit korduvalt, kuni kasutaja otsustab lõpetada",
+      "Et arvutada matemaatilisi valemeid",
+      "Et lugeda faili ühe korra läbi",
+      "Et programm töötaks lõputult ega lõpeks kunagi"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Kas vestlusrobot peaks pärast ühte vastust kinni jääma?"
+  },
+  {
+    "id": 23,
+    "level": 6,
+    "question": "Mida teeb Pythonis with-lause faili avamisel?",
+    "options": [
+      "Kontrollib, kas fail on olemas",
+      "Loeb faili sisu",
+      "Sulgeb faili automaatselt pärast ploki lõppu",
+      "Avab faili kirjutamiseks"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "With haldab ressursse automaatselt."
+  },
+  {
+    "id": 24,
+    "level": 7,
+    "question": "Mis juhtub, kui teadmistebaasi faili ei leita?",
+    "options": [
+      "Programm lõpetab töö ilma teateta",
+      "Programm püüab vea kinni ja kuvab sobiva teate",
+      "Programm loob ise uue tühja faili",
+      "Programm jääb igaveseks ootama"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Veakäsitlus (try/except) päästab programmi."
+  },
+  {
+    "id": 25,
+    "level": 7,
+    "question": "Miks on otsingul kasulik teisendada nii kasutaja sisend kui ka võtmesõnad väiketähtedeks?",
+    "options": [
+      "Sest muidu tekib viga",
+      "Sest see muudab otsingu kiiremaks",
+      "Et otsing ei sõltuks suur- ja väiketähtede erinevusest",
+      "Sest Python töötab ainult väiketähtedega"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Kas \"Tere\" ja \"tere\" on samad sõnad?"
+  },
+  {
+    "id": 26,
+    "level": 7,
+    "question": "Kuidas eemaldada sõnest kindel märk?",
+    "options": [
+      ".replace() meetodiga",
+      ".remove() meetodiga",
+      ".delete() meetodiga",
+      ".strip() meetodiga"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "replace(\"vana\", \"uus\") asendab teksti."
+  },
+  {
+    "id": 27,
+    "level": 7,
+    "question": "Kuidas lugeda faili rida-realt Pythonis?",
+    "options": [
+      "for line in file:",
+      "file.each()",
+      "file.readLines()",
+      "file.iterate()"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Failiobjekti saab kasutada tsüklis."
+  },
+  {
+    "id": 28,
+    "level": 8,
+    "question": "Kuidas muuta kõik sõne tähed väiketähtedeks Pythonis?",
+    "options": [
+      ".small()",
+      ".toLower()",
+      ".lower()",
+      ".upper()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "lower = väiksed tähed."
+  },
+  {
+    "id": 29,
+    "level": 8,
+    "question": "Mis on põhjus, miks kasutaja sisend tuleb alati puhastada (strip)?",
+    "options": [
+      "Sest Python nõuab seda",
+      "Sest muidu tekib süntaksiviga",
+      "Sest sisend võib sisaldada juhuslikke tühikuid alguses ja lõpus",
+      "Sest see muudab programmi kiiremaks"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Kasutaja võib kogemata tühikuid lisada."
+  },
+  {
+    "id": 30,
+    "level": 8,
+    "question": "Mis juhtub, kui proovid avada faili, mida pole, ilma veakäsitluseta?",
+    "options": [
+      "Programm jätkab tööd",
+      "Tagastatakse tühi fail",
+      "Programm jookseb kokku veateatega FileNotFoundError",
+      "Fail luuakse automaatselt"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Python viskab erindi, kui faili pole."
+  },
+  {
+    "id": 31,
+    "level": 8,
+    "question": "Mida teeb Pythonis enumerate() funktsioon?",
+    "options": [
+      "Nummerdab muutujaid",
+      "Tagastab nii indeksi kui ka väärtuse tsüklis",
+      "Eemaldab duplikaadid",
+      "Loeb elemente"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "enumerate lisab igale elemendile indeksi."
+  },
+  {
+    "id": 32,
+    "level": 9,
+    "question": "Miks kasutada try/except plokki faili lugemisel?",
+    "options": [
+      "Et programm töötaks kiiremini",
+      "Et muutujad oleksid kaitstud",
+      "Et püüda võimalikke vigu (nt faili puudumine) ja programm ei katkeks",
+      "Et funktsioonid saaksid omavahel suhelda"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Mis juhtub veaga, kui seda ei püüta?"
+  },
+  {
+    "id": 33,
+    "level": 9,
+    "question": "Kuidas saab Pythonis kontrollida, kas sõne sisaldab teist sõnet?",
+    "options": [
+      "in operaatoriga",
+      "findText() funktsiooniga",
+      "contains() meetodiga",
+      "includes() meetodiga"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "in on Pythonis operaator, mis kontrollib sisaldumist."
+  },
+  {
+    "id": 34,
+    "level": 9,
+    "question": "Kuidas teha Pythonis loendist kõigi unikaalsete elementide loend?",
+    "options": [
+      "unique(loend) abil",
+      "removeDuplicates(loend) abil",
+      "distinct(loend) abil",
+      "set(loend) abil"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Hulk (set) sisaldab ainult unikaalseid väärtusi."
+  },
+  {
+    "id": 35,
+    "level": 9,
+    "question": "Kuidas sortida loend Pythonis?",
+    "options": [
+      "sort()",
+      "reorder()",
+      "order()",
+      "arrange()"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "sort() sorteeri loendi elemendid kasvavas järjekorras."
+  },
+  {
+    "id": 36,
+    "level": 10,
+    "question": "Mis vahe on .txt ja .json failivormingul?",
+    "options": [
+      "Mõlemad on samad",
+      ".json on pildivorming",
+      ".txt on tavatekst, .json on struktureeritud andmevorming",
+      ".txt on struktureeritud, .json on tavatekst"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "JSON järgib kindlat süntaksit."
+  },
+  {
+    "id": 37,
+    "level": 10,
+    "question": "Kuidas kontrollida, kas sõne on tühi Pythonis?",
+    "options": [
+      "if sõne == null:",
+      "if not sõne:",
+      "if sõne.empty():",
+      "if sõne.length() == 0:"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Tühi sõne on Pythonis False-ga võrdväärne."
+  },
+  {
+    "id": 38,
+    "level": 11,
+    "question": "Miks on oluline kontrollida, kas teadmistebaas on tühi enne tsükli alustamist?",
+    "options": [
+      "Sest programm jookseb kokku",
+      "Sest Python ei saa tühja sõnastikuga töötada",
+      "Sest muidu võib programm töötada, aga mitte kunagi vastust leida",
+      "Sest tühja faili pole võimalik avada"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Mis juhtub, kui otsid vastust, aga andmeid pole?"
+  },
+  {
+    "id": 39,
+    "level": 11,
+    "question": "Milline probleem võib tekkida, kui teadmistebaasi fail sisaldab eestikeelseid tähti?",
+    "options": [
+      "Midagi ei juhtu, kõik töötab alati",
+      "Eestitähed muutuvad automaatselt inglise tähtedeks",
+      "Programm jääb igaveseks tsüklisse",
+      "Unicode-vead, kui faili avamisel pole encoding=\"utf-8\" määratud"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Pythoni open() kasutab vaikimisi süsteemi kodeeringut."
+  },
+  {
+    "id": 40,
+    "level": 11,
+    "question": "Kuidas muuta otsingut nii, et see leiaks vastuse ka siis, kui kasutaja teeb kirjavea?",
+    "options": [
+      "Pole võimalik, programm nõuab täpset sisestust",
+      "Lisada iga sõna kohta kõik võimalikud kirjavead faili",
+      "Keelata kasutajal kirjutamine",
+      "Kasutada sarnasuse mõõtmist (nt Levenshteini kaugus) või osalist vasteotsingut"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Levenshteini kaugus mõõdab, kui sarnased on kaks sõne."
+  },
+  {
+    "id": 41,
+    "level": 12,
+    "question": "Milline piirang on lihtsal võtmesõnade otsingul?",
+    "options": [
+      "Otsing leiab ainult täpse vaste, mitte sünonüüme või sarnaseid väljendeid",
+      "Otsing ei leia kunagi vastust",
+      "Otsing töötab ainult ingliskeelsete sõnadega",
+      "Otsing on liiga aeglane"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Kas \"palun seleta\" ja \"räägi mulle\" on sama küsimus?"
+  },
+  {
+    "id": 42,
+    "level": 12,
+    "question": "Kuidas lahendada olukord, kus teadmistebaas on väga suur (tuhanded read)?",
+    "options": [
+      "Kasutada aeglasemat otsingut",
+      "Piirata faili suurust",
+      "Kuvada kõik read korraga",
+      "Indekseerida andmed sõnastikku kiiremaks otsinguks"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Sõnastiku (dict) otsing on palju kiirem kui järjestikune otsing."
+  },
+  {
+    "id": 43,
+    "level": 12,
+    "question": "Kuidas teha kindlaks, kas kaks sõne on sisuliselt samad, isegi kui kirjapilt erineb?",
+    "options": [
+      "Normaliseerida mõlemad sõned (väiketähed, eemaldada kirjavahemärgid) ja siis võrrelda",
+      "See pole võimalik",
+      "Kasutada pikkuse võrdlust",
+      "Kasutada == operaatorit"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Normaliseerimine muudab mõlemad sõned võrreldavale kujule."
+  },
+  {
+    "id": 44,
+    "level": 13,
+    "question": "Kuidas muuta programmi nii, et see mäletaks varasemaid vestlusi?",
+    "options": [
+      "Pole võimalik, programm unustab kõik pärast sulgemist",
+      "Kasutada andmebaasi",
+      "Hoida kõik muutujad globaalsetena",
+      "Salvestada vestlusajalugu faili ja laadida see järgmisel käivitamisel"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Faili kirjutamine säilitab andmed ka pärast programmi sulgemist."
+  },
+  {
+    "id": 45,
+    "level": 13,
+    "question": "Mis probleem tekib, kui otsing ei tee vahet suur- ja väiketähtedel?",
+    "options": [
+      "Programm jookseb kokku",
+      "Otsing töötab aeglasemalt",
+      "Probleemi pole, see on soovitud käitumine",
+      "Otsing võib jätta mõned vastused leidmata, sest \"Tere\" ja \"tere\" on erinevad"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Inimene ei mõtle suurtähtedest sisestamisel."
+  },
+  {
+    "id": 46,
+    "level": 13,
+    "question": "Mis juhtub, kui unustad faili sulgeda pärast lugemist?",
+    "options": [
+      "Programm jookseb kokku",
+      "Fail jääb andmekandjal lukustatuks ja mäluressurss vabastamata",
+      "Midagi ei juhtu, fail suletakse automaatselt",
+      "Fail kustutatakse"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Avatud failid tarbivad süsteemiressursse."
+  },
+  {
+    "id": 47,
+    "level": 14,
+    "question": "Milline on parim viis hoida teadmistebaasi andmeid, et otsing oleks kiire?",
+    "options": [
+      "Kasutada HTML faili",
+      "Ehitada sõnastik, kus võtmeteks on märksõnad ja väärtusteks vastused",
+      "Kirjutada andmed koodi sisse",
+      "Hoida kõik failis ja otsida iga kord algusest"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Sõnastiku võtme järgi otsimine on O(1) keerukusega."
+  },
+  {
+    "id": 48,
+    "level": 14,
+    "question": "Kuidas lisada programmi võimalus õppida uusi vastuseid kasutajalt?",
+    "options": [
+      "Pole võimalik, programm kasutab ainult algset faili",
+      "Lisada manuaalselt iga uus vastus käsitsi",
+      "Lasta AI-l uued vastused genereerida",
+      "Kirjutada kasutaja sisend ja vastus faili juurde, kui vastust ei leita"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Faili saab kirjutada juurde uusi andmeid."
+  },
+  {
+    "id": 49,
+    "level": 14,
+    "question": "Kuidas kaitsta programmi selle eest, kui kasutaja sisestab CTRL+C?",
+    "options": [
+      "Kasutada teist programmeerimiskeelt",
+      "Püüda kinni KeyboardInterrupt erind try/except blokiga",
+      "Pole võimalik kaitsta",
+      "Keelata klaviatuur"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "KeyboardInterrupt on erind, mida saab püüda."
+  },
+  {
+    "id": 50,
+    "level": 15,
+    "question": "Miks võib while True tsükkel olla ohtlik?",
+    "options": [
+      "Sest see teeb programmi aeglaseks",
+      "Kui puudub break-lause, jookseb programm lõputult ja külmub",
+      "Sest while True on keelatud Pythonis",
+      "Sest see kasutab liiga palju mälu"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Ilma väljumistingimuseta tsükkel ei peatu kunagi."
+  }
+]

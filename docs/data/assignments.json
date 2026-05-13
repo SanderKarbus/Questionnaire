@@ -1,0 +1,18 @@
+[
+  {
+    "id": "001",
+    "title": "JavaScripti kalkulaator"
+  },
+  {
+    "id": "002",
+    "title": "JSON-andmete kuvamine"
+  },
+  {
+    "id": "003",
+    "title": "Teadmistebaasiga CLI otsing"
+  },
+  {
+    "id": "004",
+    "title": "Koodi testimine (Unit Testing & Jest)"
+  }
+]

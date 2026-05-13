@@ -1,0 +1,758 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "question": "Mis on ühiktestimise eesmärk?",
+    "options": [
+      "Testida kogu rakendust tervikuna",
+      "Kirjutada dokumentatsiooni",
+      "Kontrollida, kas üksikud funktsioonid või moodulid töötavad õigesti",
+      "Optimeerida koodi kiirust"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Ühik = unit = üks väike osa."
+  },
+  {
+    "id": 2,
+    "level": 1,
+    "question": "Mida teeb beforeEach() Jestis?",
+    "options": [
+      "Käivitab funktsiooni enne kõiki teste",
+      "Käivitab funktsiooni üks kord",
+      "Käivitab funktsiooni pärast iga testi",
+      "Käivitab funktsiooni enne iga testi"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "beforeEach = enne iga testi."
+  },
+  {
+    "id": 3,
+    "level": 1,
+    "question": "Mida teeb expect() Jestis?",
+    "options": [
+      "Eeldab, et test läbib",
+      "Loob ootuse, mida matcheriga võrrelda",
+      "Väljastab veateate",
+      "Ootab, kuni funktsioon lõpetab"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "expect loob \"oodatava väärtuse\" objekti."
+  },
+  {
+    "id": 4,
+    "level": 1,
+    "question": "Mida teeb describe() blokk Jestis?",
+    "options": [
+      "Grupeerib seotud testid ühte kategooriasse",
+      "Kuvab testide tulemused",
+      "Käivitab kõik testid korraga",
+      "Defineerib uue funktsiooni"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "describe kirjeldab testide gruppi."
+  },
+  {
+    "id": 5,
+    "level": 2,
+    "question": "Kuidas testida, kas massiiv sisaldab kindlat elementi?",
+    "options": [
+      "toContain()",
+      "toHave()",
+      "toBeIn()",
+      "toInclude()"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "toContain kontrollib sisaldumist."
+  },
+  {
+    "id": 6,
+    "level": 2,
+    "question": "Milleks kasutatakse toBe() matcherit?",
+    "options": [
+      "Massiivide võrdlemiseks",
+      "Vigade kontrollimiseks",
+      "Primitiivsete väärtuste võrdlemiseks (===)",
+      "Objektide süvavõrdlemiseks"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "toBe kasutab range võrdlust (===)."
+  },
+  {
+    "id": 7,
+    "level": 2,
+    "question": "Kuidas kontrollida, kas väärtus on null?",
+    "options": [
+      "toBeFalsy()",
+      "toBeNull()",
+      "toBeEmpty()",
+      "toBeUndefined()"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "toBeNull kontrollib täpselt null väärtust."
+  },
+  {
+    "id": 8,
+    "level": 2,
+    "question": "Mis on Jest?",
+    "options": [
+      "Andmebaasi haldustööriist",
+      "JavaScripti testimisraamistik",
+      "Tekstiredaktor",
+      "CSS raamistik"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Jest on Facebooki loodud testiraamistik."
+  },
+  {
+    "id": 9,
+    "level": 3,
+    "question": "Mis on assert?",
+    "options": [
+      "Testide kogum",
+      "Väide, mis kontrollib, kas tingimus on tõene",
+      "Funktsioon, mis käivitab testi",
+      "Muutuja testide jaoks"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Assert tähendab \"väitma\" või \"kinnitama\"."
+  },
+  {
+    "id": 10,
+    "level": 3,
+    "question": "Mida teeb toThrow() matcher?",
+    "options": [
+      "Kontrollib, kas funktsioon on asünkroonne",
+      "Kontrollib, kas funktsioon viskab vea",
+      "Kontrollib, kas funktsioon on defineeritud",
+      "Kontrollib, kas funktsioon tagastab väärtuse"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "toThrow ootab, et funktsioon viskab erindi."
+  },
+  {
+    "id": 11,
+    "level": 3,
+    "question": "Mida teeb afterAll() Jestis?",
+    "options": [
+      "Käivitab funktsiooni pärast iga testi",
+      "Käivitab funktsiooni iga testi ajal",
+      "Käivitab funktsiooni enne teste",
+      "Käivitab funktsiooni pärast kõiki teste"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "afterAll = pärast kõiki."
+  },
+  {
+    "id": 12,
+    "level": 3,
+    "question": "Mida teeb toBeDefined()?",
+    "options": [
+      "Kustutab muutuja",
+      "Kontrollib, kas väärtus on tõene",
+      "Kontrollib, kas väärtus on defineeritud (mitte undefined)",
+      "Defineerib uue muutuja"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "toBeDefined = on defineeritud."
+  },
+  {
+    "id": 13,
+    "level": 4,
+    "question": "Mis on coverage?",
+    "options": [
+      "Mõõdik, mis näitab, kui palju koodist on testidega kaetud",
+      "Vigade arv testides",
+      "Funktsioonide arv koodis",
+      "Testide koguarv"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Coverage = katvus."
+  },
+  {
+    "id": 14,
+    "level": 4,
+    "question": "Mida tähendab TDD?",
+    "options": [
+      "Test-Driven Development – esmalt testid, siis kood",
+      "Test Data Definition",
+      "Technical Design Document",
+      "Total Development Delay"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "TDD puhul kirjutatakse testid enne koodi."
+  },
+  {
+    "id": 15,
+    "level": 4,
+    "question": "Mida teeb it() või test() funktsioon Jestis?",
+    "options": [
+      "Lõpetab testimise",
+      "Käivitab kõik testid",
+      "Kontrollib testide katvust",
+      "Defineerib ühe testijuhtumi"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "it või test määrab ühe testi."
+  },
+  {
+    "id": 16,
+    "level": 4,
+    "question": "Mis on mock-funktsioon?",
+    "options": [
+      "Vale funktsioon, mida kasutatakse tootmises",
+      "Funktsioon, mis naeruvääristab koodi",
+      "Funktsioon, mis imiteerib päris funktsiooni käitumist testimiseks",
+      "Aeglane funktsioon"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Mock tähendab \"imitatsiooni\" või \"koopiat\"."
+  },
+  {
+    "id": 17,
+    "level": 5,
+    "question": "Kuidas käivitada Jest teste?",
+    "options": [
+      "npm test või npx jest",
+      "node test",
+      "npm start",
+      "run jest"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "npm test käivitab package.json skripti \"test\"."
+  },
+  {
+    "id": 18,
+    "level": 5,
+    "question": "Mis on testifaili laiend Jestis?",
+    "options": [
+      "_test.js",
+      ".jest.js",
+      ".test.js või .spec.js",
+      ".js.test"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Jest otsib vaikimisi .test või .spec faile."
+  },
+  {
+    "id": 19,
+    "level": 5,
+    "question": "Mis vahe on toBe() ja toEqual() vahel?",
+    "options": [
+      "Vahet pole, mõlemad teevad sama",
+      "toBe võrdleb väärtusi, toEqual võrdleb viiteid",
+      "toBe võrdleb viiteid, toEqual võrdleb väärtusi",
+      "toEqual töötab ainult numbritega"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "toEqual teeb süvavõrdluse objektidele ja massiividele."
+  },
+  {
+    "id": 20,
+    "level": 5,
+    "question": "Kuidas kuvada katvuse raportit Jestis?",
+    "options": [
+      "jest --coverage",
+      "jest --report",
+      "jest --cover",
+      "jest --verbose"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "--coverage lipuga kogub Jest katvuse info."
+  },
+  {
+    "id": 21,
+    "level": 6,
+    "question": "Miks on oluline testida ka äärejuhtumeid (edge cases)?",
+    "options": [
+      "Sest need on nõutud testimise standardites",
+      "Sest äärejuhtumeid on kõige lihtsam testida",
+      "Sest just äärejuhtudel tekivad tihti vead, mida tavakasutusel ei märka",
+      "Sest need parandavad jõudlust"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Null, tühi massiiv, negatiivsed arvud – need on tüüpilised äärejuhtumid."
+  },
+  {
+    "id": 22,
+    "level": 6,
+    "question": "Mida teeb jest.fn()?",
+    "options": [
+      "Käivitab kõik testid uuesti",
+      "Kontrollib funktsiooni olemasolu",
+      "Loob mock-funktsiooni, mille käitumist saab kontrollida",
+      "Lõpetab testimise"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "fn = function, aga see on imitatsioon."
+  },
+  {
+    "id": 23,
+    "level": 6,
+    "question": "Kuidas testida, et funktsiooni kutsuti õigete argumentidega?",
+    "options": [
+      "toHaveBeenCalledWith()",
+      "toHaveBeenCalled()",
+      "toHaveBeenCalledTimes()",
+      "toHaveArguments()"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "toHaveBeenCalledWith kontrollib argumente."
+  },
+  {
+    "id": 24,
+    "level": 6,
+    "question": "Mille poolest erineb unit test integration testist?",
+    "options": [
+      "Integration test on kiirem kui unit test",
+      "Vahet pole, need on samad",
+      "Unit test nõuab andmebaasi, integration test mitte",
+      "Unit test testib ühte moodulit, integration test testib koostööd"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Unit = üksik, integration = koostoime."
+  },
+  {
+    "id": 25,
+    "level": 7,
+    "question": "Kuidas testida asünkroonset funktsiooni Jestis?",
+    "options": [
+      "Kasutada done() callbacki",
+      "Mõlemad async/await ja done() sobivad",
+      "Asünkroonseid funktsioone ei saa testida",
+      "Kasutada async/await koos expectiga"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Jest toetab nii async/await kui ka done() mustrit."
+  },
+  {
+    "id": 26,
+    "level": 7,
+    "question": "Miks on testide nimed olulised?",
+    "options": [
+      "Sest nimed mõjutavad testide käivitamise järjekorda",
+      "Sest head nimed kirjeldavad, mida test kontrollib ja teevad veaotsingu lihtsamaks",
+      "Sest ilma nimeta teste ei käivitata",
+      "Sest Jest nõuab kindlat nimeformaati"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Testi nimi peaks ütlema, mida oodatakse."
+  },
+  {
+    "id": 27,
+    "level": 7,
+    "question": "Kuidas kontrollida, mitu korda mock-funktsiooni kutsuti?",
+    "options": [
+      "toHaveBeenCalled()",
+      "toHaveBeenCalledWith()",
+      "Mõlemad toHaveBeenCalledTimes ja toHaveBeenCalled sobivad",
+      "toHaveBeenCalledTimes()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "toHaveBeenCalledTimes kontrollib täpset arvu."
+  },
+  {
+    "id": 28,
+    "level": 7,
+    "question": "Mis juhtub, kui testifailis on viga (süntaksiviga)?",
+    "options": [
+      "Jest kuvab veateate ja see testifail ei käivitu",
+      "Testid jooksevad edasi",
+      "Jest popib vea automaatselt",
+      "Jest lõpetab kogu testimise kohe"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Süntaksiviga korral ei saa faili käivitada."
+  },
+  {
+    "id": 29,
+    "level": 8,
+    "question": "Kuidas testida, et funktsioon tagastab õige tüübi?",
+    "options": [
+      "Seda ei saa testida",
+      "Jest kontrollib tüüpe automaatselt",
+      "typeof või instanceof kontrolliga expecti sees",
+      "toBeType() matcheriga"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "typeof annab andmetüübi."
+  },
+  {
+    "id": 30,
+    "level": 8,
+    "question": "Kuidas grupeerida teste describe() bloki sisse?",
+    "options": [
+      "Kasutada group() funktsiooni",
+      "Panna describe() it() bloki sisse",
+      "Kirjutada kõik testid ilma describe()ta",
+      "Panna mitu it() blokki describe() sisse"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "describe on konteiner it() blokkide jaoks."
+  },
+  {
+    "id": 31,
+    "level": 8,
+    "question": "Mis on beforeEach ja afterEach erinevus?",
+    "options": [
+      "beforeEach käivitub üks kord, afterEach pärast iga testi",
+      "beforeEach käivitub enne kõiki teste, afterEach pärast kõiki",
+      "beforeEach käivitub enne iga testi, afterEach pärast iga testi",
+      "Vahet pole"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "before = enne, after = pärast, Each = iga."
+  },
+  {
+    "id": 32,
+    "level": 8,
+    "question": "Mida teeb toBeCloseTo() matcher?",
+    "options": [
+      "Võrdleb ujukomaarveid etteantud täpsusega",
+      "Kontrollib, kas väärtus on arv",
+      "Ümardab arvu enne võrdlust",
+      "Võrdleb, kas väärtus on ligikaudu võrdne"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Ujukomaarvude täpne võrdlus võib ebaõnnestuda ümardamisvigade tõttu."
+  },
+  {
+    "id": 33,
+    "level": 9,
+    "question": "Miks on hea tava kirjutada testid enne koodi (TDD)?",
+    "options": [
+      "Sest TDD nõuab vähem koodi",
+      "Sest TDD teste ei pea dokumenteerima",
+      "Sest nii on testimine kiirem",
+      "Sest see sunnib mõtlema läbi, mida kood tegema peab"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Test-first lähenemine selgitab nõuded."
+  },
+  {
+    "id": 34,
+    "level": 9,
+    "question": "Kuidas testida, kas funktsioon viskab vea kindla sõnumiga?",
+    "options": [
+      "expect(fn()).toThrow(\"sõnum\")",
+      "expect(fn).toThrow(\"sõnum\")",
+      "toThrow() kontrollib ainult vea olemasolu",
+      "expect(() => fn()).toThrow(\"sõnum\")"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Funktsioon tuleb mähkida noolefunktsiooni, et see kohe ei käivituks."
+  },
+  {
+    "id": 35,
+    "level": 9,
+    "question": "Mida teeb toBeTruthy()?",
+    "options": [
+      "Kontrollib, kas väärtus on tõene (truthy)",
+      "Kontrollib, kas väärtus on false",
+      "Kontrollib, kas väärtus on true",
+      "Kontrollib, kas väärtus on defineeritud"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Truthy väärtused on kõik peale false, 0, \"\", null, undefined, NaN."
+  },
+  {
+    "id": 36,
+    "level": 9,
+    "question": "Miks on oluline, et testid oleksid üksteisest sõltumatud?",
+    "options": [
+      "Sest sõltuvad testid võivad anda valetulemusi ja on raskesti hooldatavad",
+      "Sest Jest nõuab seda",
+      "Sest sõltumatud testid on lühemad",
+      "Sest nii on testid kiiremad"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Üks test ei tohiks mõjutada teise tulemust."
+  },
+  {
+    "id": 37,
+    "level": 10,
+    "question": "Kuidas testida, kas massiivi pikkus on oodatud?",
+    "options": [
+      "expect(arr.length).toBe(3)",
+      "Kumbki ei sobi",
+      "expect(arr).toHaveLength(3)",
+      "Mõlemad sobivad"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "toHaveLength on spetsiifiline massiivi pikkuse kontrolliks."
+  },
+  {
+    "id": 38,
+    "level": 10,
+    "question": "Mida teeb toMatch() matcher?",
+    "options": [
+      "Kontrollib, kas väärtus on tõene",
+      "Kontrollib, kas kaks objekti on võrdsed",
+      "Kontrollib, kas funktsioon viskab vea",
+      "Kontrollib, kas sõne sobib regulaaravaldisega"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "toMatch kasutab regexp või sõne."
+  },
+  {
+    "id": 39,
+    "level": 10,
+    "question": "Mida teeb jest.mock()?",
+    "options": [
+      "Loob uue testifaili",
+      "Asendab terve mooduli mock-objektiga",
+      "Käivitab testi mitu korda",
+      "Kustutab mock-funktsioonid"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "mock() on võimas vahend sõltuvuste isoleerimiseks."
+  },
+  {
+    "id": 40,
+    "level": 11,
+    "question": "Mis on snapshot-testimine?",
+    "options": [
+      "Testib ainult kasutajaliidest",
+      "Salvestab väljundi ja võrdleb seda hilisemate käitustega",
+      "Testib iga funktsiooni täpselt üks kord",
+      "Salvestab testide tulemused faili"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Snapshot = hetketõmmis."
+  },
+  {
+    "id": 41,
+    "level": 11,
+    "question": "Kuidas testida, et funktsioon ei viska viga?",
+    "options": [
+      "Mähkida expect() toThrow() negatiiviga või lihtsalt käivitada funktsioon",
+      "Kasutada toBeNull()",
+      "Kasutada not.toThrow()",
+      "Kasutada toBeUndefined()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "not pöörab matcheri tähenduse ümber."
+  },
+  {
+    "id": 42,
+    "level": 11,
+    "question": "Kuidas kontrollida, et massiiv on sorteeritud?",
+    "options": [
+      "Kasutada toBeSorted() matcherit",
+      "Sorteerida massiiv uuesti ja võrrelda",
+      "Itereerida massiiv ja kontrollida iga järjestikust paari",
+      "toEqual() ei suuda seda kontrollida"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Lihtne tsükkel kontrollib iga naabripaari."
+  },
+  {
+    "id": 43,
+    "level": 12,
+    "question": "Kuidas testida funktsiooni, mis sõltub välistest andmetest (nt API päring)?",
+    "options": [
+      "Jätta see funktsioon testimata",
+      "Teha päris API päring iga testi ajal",
+      "Mockida väline sõltuvus ja anda etteantud vastus",
+      "Kirjutada test ainult edukale juhule"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Mockimine isoleerib testi välistest sõltuvustest."
+  },
+  {
+    "id": 44,
+    "level": 12,
+    "question": "Mis juhtub, kui testifailis on mitu describe() blokki?",
+    "options": [
+      "Tekib viga",
+      "Kõik testid käivitatakse ilma gruppideta",
+      "Iga describe blokk käivitatakse eraldi gruppidena",
+      "Ainult esimene describe käivitatakse"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Iga describe loob oma alamgrupi."
+  },
+  {
+    "id": 45,
+    "level": 12,
+    "question": "Mida teeb jest.useFakeTimers()?",
+    "options": [
+      "Käivitab testid kiiremini",
+      "Asendab päris taimerid (setTimeout, setInterval) mock-taimeritega",
+      "Lülitab välja kõik taimerid",
+      "Mõõdab testide kestust"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "FakeTimers võimaldab aega kiirendada või peatada."
+  },
+  {
+    "id": 46,
+    "level": 13,
+    "question": "Mis on stub ja kuidas see erineb mockist?",
+    "options": [
+      "Stub asendab väärtuse, mock asendab terve funktsiooni käitumise",
+      "Mock asendab väärtuse, stub asendab funktsiooni",
+      "Stub on keerulisem kui mock",
+      "Vahet pole, mõisted on sünonüümid"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Stub annab etteantud vastuse, mock kontrollib ka väljakutseid."
+  },
+  {
+    "id": 47,
+    "level": 13,
+    "question": "Miks on vale kirjutada teste, mis sõltuvad teiste testide tulemustest?",
+    "options": [
+      "Sest testid peavad olema lühemad",
+      "Sest siis ei saa teste eraldi käivitada ja vead on raskesti leitavad",
+      "Sest see on aeglasem",
+      "Sest Jest keelab selle"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Iga test peaks töötama ka üksi käivitatuna."
+  },
+  {
+    "id": 48,
+    "level": 13,
+    "question": "Mis on koodi mutant ja mutant-testimine?",
+    "options": [
+      "Koodi tahtlik muutmine, et kontrollida, kas testid suudavad vea leida",
+      "Koodi kopeerimine uude faili",
+      "Testide kirjutamine teises keeles",
+      "Vigase koodi testimine"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Mutation testing mõõdab testide kvaliteeti."
+  },
+  {
+    "id": 49,
+    "level": 14,
+    "question": "Mis probleem võib tekkida, kui testid kasutavad globaalset olekut?",
+    "options": [
+      "Globaalne olek on aeglasem",
+      "Globaalset olekut ei saa testides kasutada",
+      "Probleemi pole, globaalne olek on testimisel soovitatav",
+      "Testid võivad üksteist mõjutada ja anda valetulemusi"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Iga test peaks algama puhtalt lehelt."
+  },
+  {
+    "id": 50,
+    "level": 14,
+    "question": "Kuidas testida, et objekt sisaldab kindlat võtit?",
+    "options": [
+      "toContain()",
+      "toHaveProperty()",
+      "toInclude()",
+      "toHaveKey()"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "toHaveProperty kontrollib objekti omadust."
+  },
+  {
+    "id": 51,
+    "level": 14,
+    "question": "Milline on hea testi struktuur (AAA muster)?",
+    "options": [
+      "Arrange – Assert – Act",
+      "Act – Arrange – Assert",
+      "Assert – Act – Arrange",
+      "Arrange (ettevalmistus) – Act (tegevus) – Assert (kontroll)"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "AAA = Arrange, Act, Assert."
+  },
+  {
+    "id": 52,
+    "level": 15,
+    "question": "Miks on oluline, et testid oleksid korratavad (repeatable)?",
+    "options": [
+      "Sest korratavad testid on lühemad",
+      "Sest test peab andma sama tulemuse sõltumata sellest, millal või kus seda käivitatakse",
+      "Sest vastasel juhul ei saa teste automatiseerida",
+      "Sest nii on testid kiiremad"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Kui test ebaõnnestub juhuslikult, pole see usaldusväärne."
+  },
+  {
+    "id": 53,
+    "level": 15,
+    "question": "Mis on matcherite not-pöördväärtuse kasutamise eesmärk?",
+    "options": [
+      "Teha testist aeglasem",
+      "Kontrollida, et väärtus EI vasta tingimusele",
+      "Keelata testi käivitamine",
+      "Pöörata testi tulemus"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "expect(x).not.toBe(y) kontrollib, et x ei ole y."
+  },
+  {
+    "id": 54,
+    "level": 15,
+    "question": "Kuidas testida, et funktsioon ei blokeeri põhithreadi?",
+    "options": [
+      "Kasutada asünkroonseid teste ja kontrollida, et funktsioon tagastab Promise'i",
+      "Kasutada setTimeout()",
+      "Kasutada toBeAsync() matcherit",
+      "Seda ei saa testida"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Asünkroonne funktsioon tagastab Promise'i."
+  }
+]

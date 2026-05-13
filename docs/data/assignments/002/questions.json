@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "question": "Mis on URL?",
+    "options": [
+      "Veebiaadress, mis viitab ressursile internetis",
+      "Programmeerimiskeel",
+      "Andmebaasi päringukeel",
+      "Failivorming"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "URL = Uniform Resource Locator."
+  },
+  {
+    "id": 2,
+    "level": 1,
+    "question": "Mis vahe on HTTP GET ja POST päringul?",
+    "options": [
+      "GET on kiirem kui POST",
+      "GET pärib andmeid, POST saadab andmeid",
+      "GET saadab andmeid, POST pärib",
+      "Mõlemad teevad sama asja"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "GET = get (saada), POST = post (postitada)."
+  },
+  {
+    "id": 3,
+    "level": 1,
+    "question": "Mis on async/await?",
+    "options": [
+      "Funktsioonide deklareerimise viis",
+      "Süntaks Promise'ide lihtsamaks kasutamiseks",
+      "Muutujate tüübid",
+      "Tsüklite kirjutamise viis"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "async teeb funktsioonist asünkroonse, ootab await."
+  },
+  {
+    "id": 4,
+    "level": 1,
+    "question": "Kuidas kuvada brauseri konsoolis midagi?",
+    "options": [
+      "print()",
+      "log.console()",
+      "write()",
+      "console.log()"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "console.log on arendaja lemmikvahend."
+  },
+  {
+    "id": 5,
+    "level": 2,
+    "question": "Mida tähendab HTTP?",
+    "options": [
+      "HyperText Transfer Protocol",
+      "Home Tool Transfer Protocol",
+      "High Tech Transfer Protocol",
+      "HyperText Transfer Program"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "See on protokoll veebilehtede edastamiseks."
+  },
+  {
+    "id": 6,
+    "level": 2,
+    "question": "Kuidas laadida brauseris andmeid JSON-failist?",
+    "options": [
+      "import() abil",
+      "loadJSON() abil",
+      "require() abil",
+      "fetch() abil"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "See funktsioon teeb võrgupäringu ja tagastab Promise'i."
+  },
+  {
+    "id": 7,
+    "level": 2,
+    "question": "Mis on JavaScripti massiiv?",
+    "options": [
+      "Andmestruktuur mitme väärtuse hoidmiseks",
+      "HTML elementide loend",
+      "Funktsioonide kogum",
+      "CSS reeglite kogum"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Massiiv on nagu nimekiri."
+  },
+  {
+    "id": 8,
+    "level": 2,
+    "question": "Mis on JSON?",
+    "options": [
+      "CSS raamistik",
+      "Tekstipõhine andmevahetusvorming",
+      "Programmeerimiskeel",
+      "Andmebaasi tüüp"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "JSON on lühend sõnadest JavaScript Object Notation."
+  },
+  {
+    "id": 9,
+    "level": 3,
+    "question": "Kuidas muuta HTML elemendi stiili JavaScriptis?",
+    "options": [
+      "element.css = \"väärtus\"",
+      "element.style.omadus = \"väärtus\"",
+      "element.class = \"väärtus\"",
+      "element.styles = \"väärtus\""
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "style omadus võimaldab muuta elemendi CSS-i."
+  },
+  {
+    "id": 10,
+    "level": 3,
+    "question": "Mida teeb .then() meetod Promise'i puhul?",
+    "options": [
+      "Katkestab Promise'i",
+      "Käivitab funktsiooni, kui Promise on edukalt täidetud",
+      "Tagastab vea",
+      "Saadab päringu uuesti"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Promise täitub kas edukalt või veaga."
+  },
+  {
+    "id": 11,
+    "level": 3,
+    "question": "Mis on DOM?",
+    "options": [
+      "Dokumendi objektimudel, mis esitab lehte puustruktuurina",
+      "Andmebaasi haldussüsteem",
+      "JavaScripti raamistik",
+      "CSS preprotsessor"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "DOM = Document Object Model."
+  },
+  {
+    "id": 12,
+    "level": 3,
+    "question": "Mida teeb .length omadus massiivil?",
+    "options": [
+      "Tagastab massiivi tüübi",
+      "Tagastab massiivi elementide arvu",
+      "Lisab massiivi elemendi",
+      "Kustutab massiivi"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Seda omadust kasutatakse massiivi pikkuse leidmiseks."
+  },
+  {
+    "id": 13,
+    "level": 4,
+    "question": "Milleks kasutatakse HTML tabelit veebilehel?",
+    "options": [
+      "Vormi saatmiseks",
+      "Piltide paigutamiseks",
+      "Menüü loomiseks",
+      "Andmete kuvamiseks ridade ja veergudena"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Tabel koosneb ridadest (tr) ja veergudest (td)."
+  },
+  {
+    "id": 14,
+    "level": 4,
+    "question": "Kuidas leida HTML element selle ID järgi?",
+    "options": [
+      "document.getElementById(\"id\")",
+      "document.find(\"#id\")",
+      "document.search(\"id\")",
+      "document.locate(\"id\")"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "getElementById on kõige levinum meetod."
+  },
+  {
+    "id": 15,
+    "level": 4,
+    "question": "Millist JavaScripti meetodit kasutatakse massiivi elementide filtreerimiseks?",
+    "options": [
+      "find()",
+      "select()",
+      "filter()",
+      "search()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "filter() loob uue massiivi ainult sobivatest elementidest."
+  },
+  {
+    "id": 16,
+    "level": 4,
+    "question": "Mis on API?",
+    "options": [
+      "Liides, mis võimaldab erinevatel tarkvaradel omavahel suhelda",
+      "Andmebaasi tüüp",
+      "Programmeerimiskeel",
+      "Veebilehtede loomise tööriist"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "API = Application Programming Interface."
+  },
+  {
+    "id": 17,
+    "level": 5,
+    "question": "Mida teeb JSON.stringify()?",
+    "options": [
+      "Teisendab JavaScripti objekti JSON-tekstiks",
+      "Kuvab JSON-i konsoolis",
+      "Valideerib JSON-i",
+      "Teisendab JSON-teksti JavaScripti objektiks"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "stringify teeb objektist sõne (string)."
+  },
+  {
+    "id": 18,
+    "level": 5,
+    "question": "Kuidas lisada elementi HTML massiivi JavaScriptis?",
+    "options": [
+      "add()",
+      "insert()",
+      "push()",
+      "append()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "push lisab elemendi massiivi lõppu."
+  },
+  {
+    "id": 19,
+    "level": 5,
+    "question": "Milleks kasutatakse HTML-s <table> elementi?",
+    "options": [
+      "Tabeli loomiseks",
+      "Vormi saatmiseks",
+      "Pildi lisamiseks",
+      "Stiili määramiseks"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Table tähendab tabelit."
+  },
+  {
+    "id": 20,
+    "level": 6,
+    "question": "Millist meetodit kasutatakse JSON-andmete teisendamiseks JavaScripti objektiks?",
+    "options": [
+      ".text()",
+      ".parse()",
+      ".stringify()",
+      ".json()"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "See meetod kutsutakse fetch() vastusest."
+  },
+  {
+    "id": 21,
+    "level": 6,
+    "question": "Mis on otsingufunktsiooni põhiidee andmete kuvamisel?",
+    "options": [
+      "Kustutada mittesobivad andmed",
+      "Laadida andmed uuesti serverist iga kord",
+      "Sortida andmed tähestiku järjekorras",
+      "Filtreerida andmed kasutaja sisestatud teksti alusel ja kuvada ainult sobivad"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Otsing vähendab näidatavate andmete hulka."
+  },
+  {
+    "id": 22,
+    "level": 6,
+    "question": "Miks on oluline kasutada fetch() päringus .catch() plokki?",
+    "options": [
+      "Et püüda kinni võrguvead ja näidata kasutajale sõbralikku veateadet",
+      "Et kiirendada päringut",
+      "Sest ilma selleta ei tööta fetch() üldse",
+      "Et automaatselt uuesti proovida"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Ilma catch()ta võib viga jääda märkamata."
+  },
+  {
+    "id": 23,
+    "level": 6,
+    "question": "Kuidas lisada igale massiivi elemendile sama tehe?",
+    "options": [
+      "map()",
+      "forEach()",
+      "Kumbki ei sobi",
+      "Mõlemad sobivad"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "map() loob uue massiivi, forEach() käivitab funktsiooni igal elemendil."
+  },
+  {
+    "id": 24,
+    "level": 7,
+    "question": "Mis on Promise?",
+    "options": [
+      "HTML element",
+      "Objekt, mis esindab asünkroonse tegevuse lõpptulemust",
+      "Muutuja tüüp",
+      "Funktsioon, mis käivitub kohe"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Promise lubab, et tulemus saabub hiljem."
+  },
+  {
+    "id": 25,
+    "level": 7,
+    "question": "Kuidas kuvada veateadet, kui JSON-faili laadimine ebaõnnestub?",
+    "options": [
+      "Viga kuvatakse automaatselt brauseri konsoolis",
+      "Kirjutada vea HTML-faili sisse",
+      "Pole võimalik, veateadet ei saa kuvada",
+      "Catch() plokis muuta mõne HTML elemendi tekst veateateks"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "DOM-i manipulatsiooniga saab veateate kuvada."
+  },
+  {
+    "id": 26,
+    "level": 7,
+    "question": "Miks on XMLHttpRequest vanem meetod kui fetch()?",
+    "options": [
+      "Sest fetch() on aeglasem",
+      "Vahet pole, mõlemad on samad",
+      "Sest fetch() on moodsam ja lihtsamini kasutatav",
+      "Sest XMLHttpRequest ei tööta enam"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "fetch() põhineb Promise'idel ja on puhtama süntaksiga."
+  },
+  {
+    "id": 27,
+    "level": 7,
+    "question": "Kuidas filter() meetod töötab?",
+    "options": [
+      "Sorteerib massiivi tähestiku järjekorras",
+      "Lisab igale elemendile uue omaduse",
+      "Eemaldab elemente algsest massiivist",
+      "Loob uue massiivi ainult elementidest, mis vastavad tingimusele"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "filter() nagu sõel – laseb läbi ainult sobivad."
+  },
+  {
+    "id": 28,
+    "level": 8,
+    "question": "Mis juhtub, kui proovid JSON.parse() sõnega, mis pole korrektne JSON?",
+    "options": [
+      "Tagastatakse null",
+      "Tagastatakse undefined",
+      "Sõne tagastatakse muutmata",
+      "Tekib viga (SyntaxError)"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Vigane JSON põhjustab parser-vea."
+  },
+  {
+    "id": 29,
+    "level": 8,
+    "question": "Miks on andmed JSON-failis eraldi, mitte JavaScripti koodi sees?",
+    "options": [
+      "Sest see muudab lehe kiiremaks",
+      "Sest andmete eraldamine võimaldab neid muuta ilma koodi puutumata",
+      "Sest see on ainus viis andmete laadimiseks",
+      "Sest JavaScript ei saa JSON-i koodi sees hoida"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Kui andmed on eraldi failis, saab neid uuendada iseseisvalt."
+  },
+  {
+    "id": 30,
+    "level": 8,
+    "question": "Mis on erinevus null ja undefined vahel?",
+    "options": [
+      "Vahet pole, mõlemad tähendavad sama",
+      "null on teadlikult määratud tühiväärtus, undefined tähendab, et väärtus puudub",
+      "undefined on teadlikult määratud, null tähendab veateadet",
+      "null on arv, undefined on tekst"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "undefined tähendab \"pole määratud\", null tähendab \"tühjus\"."
+  },
+  {
+    "id": 31,
+    "level": 8,
+    "question": "Mida teeb Array.sort() ilma argumentideta?",
+    "options": [
+      "Sorteerib elemendid kahanevas järjekorras",
+      "Sorteerib elemendid stringidena tähestiku järjekorras",
+      "Ei sorteeri midagi",
+      "Sorteerib numbrid kasvavas järjekorras"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Vaikimisi sort() käsitleb elemente stringidena."
+  },
+  {
+    "id": 32,
+    "level": 9,
+    "question": "Mida teeb spread-operaator (...) massiiviga?",
+    "options": [
+      "Kustutab massiivi",
+      "Laiendab massiivi elementideks",
+      "Sorteerib massiivi",
+      "Kopeerib massiivi"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "... laiendab massiivi nii, nagu elemendid oleks eraldi."
+  },
+  {
+    "id": 33,
+    "level": 9,
+    "question": "Kuidas teha mitu fetch() päringut järjest?",
+    "options": [
+      "Kasutada Promise chainingut või async/await",
+      "Teha mitu fetch() kutset samas reas",
+      "Pole võimalik, fetch() töötab ainult üks kord",
+      "Kasutada setTimeout()"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "then() tagastab uue Promise'i, mida saab aheldada."
+  },
+  {
+    "id": 34,
+    "level": 9,
+    "question": "Kuidas leida massiivist kindel element?",
+    "options": [
+      "filter()",
+      "find()",
+      "search()",
+      "locate()"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "find() tagastab esimese elemendi, mis vastab tingimusele."
+  },
+  {
+    "id": 35,
+    "level": 9,
+    "question": "Mis juhtub, kui fetch() päring ebaõnnestub (nt faili pole)?",
+    "options": [
+      "Brauser proovib automaatselt uuesti",
+      "catch() plokk püüab vea ja saab kuvada veateate",
+      "Leht läheb kokku ja kuvab tühja lehe",
+      "JavaScript ignoreerib vea vaikselt"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Promise'i vead püütakse kinni .catch() meetodiga."
+  },
+  {
+    "id": 36,
+    "level": 10,
+    "question": "Kuidas kontrollida, kas massiiv sisaldab kindlat väärtust?",
+    "options": [
+      "has()",
+      "exists()",
+      "contains()",
+      "includes()"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "includes tagastab true/false."
+  },
+  {
+    "id": 37,
+    "level": 10,
+    "question": "Kuidas kuvada sõnum \"Laadin...\" andmete laadimise ajal?",
+    "options": [
+      "Seda pole võimalik teha",
+      "Enne fetch() kutset muuta HTML elemendi tekstiks \"Laadin...\"",
+      "See kuvatakse automaatselt",
+      "Pärast fetch() kutset lisada teksti \"Laadin...\""
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Kasutaja peab teadma, et midagi toimub."
+  },
+  {
+    "id": 38,
+    "level": 11,
+    "question": "Mida teeb debounce ja milleks seda kasutada?",
+    "options": [
+      "Kiirendab funktsiooni täitmist",
+      "Kustutab funktsiooni mälust",
+      "Vähendab funktsiooni väljakutsete arvu, oodates, kuni kasutaja lõpetab trükkimise",
+      "Lisab funktsioonile viivituse enne käivitamist"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Debouncing on kasulik otsingiväljade puhul."
+  },
+  {
+    "id": 39,
+    "level": 11,
+    "question": "Kuidas optimeerida andmete kuvamist, kui JSON-failis on 10 000 rida?",
+    "options": [
+      "Kasutada lehekülgedeks jaotamist (pagination) või virtualiseerimist",
+      "Teisendada JSON XML-iks",
+      "Kuvada kõik korraga ühel lehel",
+      "Keelata JavaScript ja kuvada staatiline HTML"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Kui andmeid on palju, ei saa neid kõiki korraga kuvada."
+  },
+  {
+    "id": 40,
+    "level": 11,
+    "question": "Kuidas muuta lahendust nii, et see töötaks reaalajas uuenevate andmetega?",
+    "options": [
+      "Kasutada setInterval() või WebSocket ühendust andmete perioodiliseks uuendamiseks",
+      "Laadida leht iga kord uuesti",
+      "Pole võimalik, andmed laetakse ainult üks kord",
+      "Kirjutada kogu HTML uuesti iga sekund"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Andmeid saab uuendada kindlate ajavahemike tagant."
+  },
+  {
+    "id": 41,
+    "level": 12,
+    "question": "Kuidas laadida JSON-andmeid taustal ilma lehte blokeerimata?",
+    "options": [
+      "document.write()",
+      "Sünkroonne XMLHttpRequest",
+      "Asünkroonne fetch() koos async/await või Promise-iga",
+      "Kasutada <script> silti"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Asünkroonne tähendab, et leht ei külmu ooteajal."
+  },
+  {
+    "id": 42,
+    "level": 12,
+    "question": "Mis vahe on filter() ja map() meetoditel?",
+    "options": [
+      "Mõlemad teevad sama asja",
+      "filter() valib elemendid tingimuse järgi, map() muudab iga elementi",
+      "filter() muudab elemente, map() valib tingimuse järgi",
+      "filter() töötab ainult numbritega"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Üks vähendab elementide arvu, teine teisendab neid."
+  },
+  {
+    "id": 43,
+    "level": 12,
+    "question": "Miks võib tekkinud veateade olla kasutajale kasutu, kui see on liiga tehniline?",
+    "options": [
+      "Sest brauser peidab tehnilised vead automaatselt",
+      "Sest kasutaja ei mõista tehnilist sõnavara ja ei tea, mida teha",
+      "Sest tehnilised veateated on alati valed",
+      "Sest tehnilised vead ei ole olulised"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "\"404 Not Found\" ei ütle tavakasutajale midagi."
+  },
+  {
+    "id": 44,
+    "level": 13,
+    "question": "Mis on Event Delegation ja milleks seda kasutada?",
+    "options": [
+      "Sündmuste eemaldamine",
+      "Iga elemendi jaoks eraldi sündmusekuulaja lisamine",
+      "Sündmuste järjekorra muutmine",
+      "Sündmuste kuulamine ülemiselemendil, et hallata dünaamiliselt lisatud elemente"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Delegeerimine tähendab, et vanem kuulab laste sündmusi."
+  },
+  {
+    "id": 45,
+    "level": 13,
+    "question": "Mis on localStorage ja kuidas see erineb sessioonist?",
+    "options": [
+      "localStorage on kiirem kui sessionStorage",
+      "sessionStorage säilib pärast sulgemist, localStorage kustutatakse",
+      "localStorage säilib pärast brauseri sulgemist, sessionStorage kustutatakse",
+      "Vahet pole, mõlemad teevad sama"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Local = kohalik, session = seanss."
+  },
+  {
+    "id": 46,
+    "level": 13,
+    "question": "Kuidas kuvada tabelis tuhandeid ridu ilma lehte aeglustamata?",
+    "options": [
+      "Kasutada pilte tabeli asemel",
+      "Kuvada kõik read korraga",
+      "Keelata JavaScript",
+      "Virtuaalne kerimine (virtual scrolling) – kuvada ainult nähtavaid ridu"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Brauser ei suuda tuhandeid DOM-elemente korraga tõhusalt hallata."
+  },
+  {
+    "id": 47,
+    "level": 14,
+    "question": "Mis turvarisk tekib, kui kasutaja otsingusisend lisatakse innerHTML abil?",
+    "options": [
+      "Leht ei lae üldse",
+      "XSS (Cross-Site Scripting) – kasutaja saab lisada pahatahtlikku koodi",
+      "Andmebaas kustutatakse",
+      "Server läheb üle"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "innerHTML lisab sisu HTML-ina, sealhulgas <script> elemendid."
+  },
+  {
+    "id": 48,
+    "level": 14,
+    "question": "Mis juhtub, kui fetch() päringu URL on vale ja veakäsitlus puudub?",
+    "options": [
+      "Promise lükatakse tagasi ja JavaScripti konsoolis kuvatakse veateade",
+      "Leht jätkab tööd ilma veateateta",
+      "Tekib lõpmatu tsükkel",
+      "Brauser laeb automaatselt avalehe"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Ilma .catch() plokita vea puhul Promise lihtsalt lükatakse tagasi."
+  },
+  {
+    "id": 49,
+    "level": 14,
+    "question": "Mis on CORS ja miks see võib fetch() päringut takistada?",
+    "options": [
+      "Andmebaasi ühenduse protokoll",
+      "Turvamehhanism, mis takistab ühe saidi skriptil teise saidi andmeid lugeda",
+      "CSS reeglistik",
+      "JavaScripti raamistik"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "CORS = Cross-Origin Resource Sharing."
+  },
+  {
+    "id": 50,
+    "level": 15,
+    "question": "Kuidas optimeerida massiivi suurte andmehulkade töötlemist?",
+    "options": [
+      "Kasutada rohkem muutujaid",
+      "Lisada rohkem kommentaare",
+      "Kirjutada kood ühele reale",
+      "Kasutada tõhusaid algoritme ja vältida DOM-i muutmist iga elemendi jaoks"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "DOM-i operatsioonid on aeglased, neid tuleks minimeerida."
+  }
+]

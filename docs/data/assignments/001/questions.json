@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "question": "Kuidas lisada JavaScriptis nupule funktsioon, mis käivitub klikkimisel?",
+    "options": [
+      "onchange=\"funktsioon()\"",
+      "onpress=\"funktsioon()\"",
+      "addEventListener(\"click\", funktsioon)",
+      "onhover=\"funktsioon()\""
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "addEventListener on JavaScripti meetod sündmuste kuulamiseks."
+  },
+  {
+    "id": 2,
+    "level": 1,
+    "question": "Mida teeb alert() funktsioon?",
+    "options": [
+      "Kustutab lehel oleva teksti",
+      "Kuvab hüpikakna teatega",
+      "Salvestab andmed faili",
+      "Saadab päringu serverisse"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "alert tähendab hoiatust."
+  },
+  {
+    "id": 3,
+    "level": 1,
+    "question": "Kuidas käivitada funktsioon JavaScriptis?",
+    "options": [
+      "run funktsioon",
+      "execute funktsioon",
+      "funktsioon()",
+      "call.funktsioon"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Funktsiooni nime järel kasutatakse sulge."
+  },
+  {
+    "id": 4,
+    "level": 1,
+    "question": "Mida teeb operaator + kahe teksti vahel?",
+    "options": [
+      "Tagastab vea",
+      "Korrutab tekstid",
+      "Liidab numbrid kokku",
+      "Liidab tekstid kokku"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Tekstide liitmist nimetatakse konkatenatsiooniks."
+  },
+  {
+    "id": 5,
+    "level": 2,
+    "question": "Kuidas teisendada string \"10\" numbriks 10 JavaScriptis?",
+    "options": [
+      "toString()",
+      "toNumber()",
+      "toFixed()",
+      "parseInt() või Number()"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "parse-sõnaga funktsioon teisendab teksti arvuks."
+  },
+  {
+    "id": 6,
+    "level": 2,
+    "question": "Mis vahe on let ja const vahel?",
+    "options": [
+      "let väärtust ei saa muuta, const väärtust saab",
+      "const väärtust ei saa muuta, let väärtust saab",
+      "Vahet pole, mõlemad on samad",
+      "const on vanem kui let"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "const tuleb sõnast constant ehk konstant."
+  },
+  {
+    "id": 7,
+    "level": 2,
+    "question": "Mis on tulemus 5 + 3 JavaScriptis?",
+    "options": [
+      "Error",
+      "35",
+      "53",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Tavaline aritmeetiline liitmine."
+  },
+  {
+    "id": 8,
+    "level": 2,
+    "question": "Kuidas deklareerida JavaScriptis muutuja?",
+    "options": [
+      "Kõik eelnevad",
+      "var",
+      "let",
+      "const"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Kõik kolm on JavaScriptis muutuja deklareerimise viisid."
+  },
+  {
+    "id": 9,
+    "level": 3,
+    "question": "Millist HTML elementi kasutatakse kõige sagedamini nuppude tegemiseks?",
+    "options": [
+      "<div>",
+      "<button>",
+      "<span>",
+      "<a>"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Milline HTML-element on mõeldud just klikkimise jaoks?"
+  },
+  {
+    "id": 10,
+    "level": 3,
+    "question": "Mida tähendab lühend HTML?",
+    "options": [
+      "High Tech Modern Language",
+      "HyperText Modern Links",
+      "Home Tool Markup Language",
+      "HyperText Markup Language"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "HTML on veebilehtede loomise standard."
+  },
+  {
+    "id": 11,
+    "level": 3,
+    "question": "Kuidas kuvada tulemust HTML elemendis, mille ID on \"vastus\"?",
+    "options": [
+      "document.find(\"vastus\") = tulemus;",
+      "display(\"vastus\", tulemus);",
+      "document.getElementById(\"vastus\").textContent = tulemus;",
+      "get.element(\"vastus\").value = tulemus;"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "getElementById on meetod elemendi leidmiseks."
+  },
+  {
+    "id": 12,
+    "level": 3,
+    "question": "Milleks kasutatakse CSS-i veebilehel?",
+    "options": [
+      "Välimuse ja kujunduse määramiseks",
+      "Andmete salvestamiseks",
+      "Loogika kirjutamiseks",
+      "Serveriga suhtlemiseks"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "CSS = Cascading Style Sheets."
+  },
+  {
+    "id": 13,
+    "level": 4,
+    "question": "Mis väärtus on tõeväärtus \"true\" vastand?",
+    "options": [
+      "false",
+      "undefined",
+      "0",
+      "null"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "true ja false on JavaScripti tõeväärtused."
+  },
+  {
+    "id": 14,
+    "level": 4,
+    "question": "Kuidas kirjutada tingimuslause JavaScriptis?",
+    "options": [
+      "case (tingimus) { ... }",
+      "if (tingimus) { ... }",
+      "condition (tingimus) { ... }",
+      "when (tingimus) { ... }"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "if on ingliskeelne sõna \"kui\" jaoks."
+  },
+  {
+    "id": 15,
+    "level": 4,
+    "question": "Millise sündmusega reageeritakse nupuvajutusele JavaScriptis?",
+    "options": [
+      "change",
+      "click",
+      "hover",
+      "press"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Hiireklõpsu sündmus."
+  },
+  {
+    "id": 16,
+    "level": 4,
+    "question": "Mis märk tähistab JavaScriptis korrutamist?",
+    "options": [
+      "*",
+      "#",
+      "x",
+      "."
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Tärn klaviatuuril."
+  },
+  {
+    "id": 17,
+    "level": 5,
+    "question": "Mis tüüpi on väärtus \"tere\" JavaScriptis?",
+    "options": [
+      "boolean",
+      "object",
+      "string",
+      "number"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Tekstiväärtusi nimetatakse stringideks."
+  },
+  {
+    "id": 18,
+    "level": 5,
+    "question": "Mis juhtub, kui proovid jagada nulliga JavaScriptis?",
+    "options": [
+      "Tulemus on undefined",
+      "Tulemus on Infinity",
+      "Tekib viga (Error)",
+      "Tulemus on 0"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Nulliga jagamisel ei teki viga, aga tulemus on lõpmatus."
+  },
+  {
+    "id": 19,
+    "level": 5,
+    "question": "Kuidas kommenteerida ühte rida JavaScriptis?",
+    "options": [
+      "/*",
+      "//",
+      "<!--",
+      "#"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Kahte kaldkriipsu kasutatakse üherealiseks kommentaariks."
+  },
+  {
+    "id": 20,
+    "level": 6,
+    "question": "Miks kuvatakse tulemus NaN, kui arvutada \"abc\" * 5?",
+    "options": [
+      "Sest teksti ei saa arvuga korrutada",
+      "Sest korrutamine pole lubatud",
+      "Sest tulemus on liiga suur",
+      "Sest JavaScriptis on viga"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "NaN = Not a Number."
+  },
+  {
+    "id": 21,
+    "level": 6,
+    "question": "Mis on tulemus 1 + \"1\" JavaScriptis?",
+    "options": [
+      "2",
+      "Error",
+      "\"2\"",
+      "\"11\""
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Kui üks operandidest on tekst, toimub sõnede liitmine."
+  },
+  {
+    "id": 22,
+    "level": 6,
+    "question": "Kuidas võrrelda kahte massiivi JavaScriptis?",
+    "options": [
+      "Massiive ei saa üldse võrrelda",
+      "Massiive ei saa otseselt == operaatoriga võrrelda",
+      "Massiive saab võrrelda === operaatoriga",
+      "Massiive saab võrrelda == operaatoriga"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "== võrdleb massiivide puhul viiteid, mitte sisu."
+  },
+  {
+    "id": 23,
+    "level": 6,
+    "question": "Miks on ohtlik kasutada eval() funktsiooni kalkulaatoris?",
+    "options": [
+      "Sest eval() ei tööta brauseris",
+      "Sest eval() käivitab suvalise JavaScripti koodi, mis võib olla turvarisk",
+      "Sest eval() tagastab alati vale tulemuse",
+      "Sest eval() on aeglane"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "eval tähendab evaluate ehk \"arvuta\", aga see võib arvutada ka koodi."
+  },
+  {
+    "id": 24,
+    "level": 7,
+    "question": "Mis vahe on == ja === operaatoritel JavaScriptis?",
+    "options": [
+      "Vahet pole, nad teevad sama asja",
+      "== võrdleb ainult väärtust, === võrdleb väärtust ja tüüpi",
+      "=== on ainult numbrite jaoks",
+      "== on kiirem kui ==="
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Kolme võrdusmärgiga kontrollitakse ka tüüpi."
+  },
+  {
+    "id": 25,
+    "level": 7,
+    "question": "Mis vahe on while ja for tsüklil?",
+    "options": [
+      "while on kiirem kui for",
+      "for töötab ainult massiividega",
+      "Vahet pole, mõlemad on samad",
+      "for kasutab loendurit, while töötab tingimusega"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "for (let i = 0; i < 5; i++) on tüüpiline for tsükkel."
+  },
+  {
+    "id": 26,
+    "level": 7,
+    "question": "Kuidas kustutada stringilt viimane märk?",
+    "options": [
+      "trim()",
+      "slice(0, -1)",
+      "pop()",
+      "deleteLast()"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "slice meetodiga saab lõigata stringi osa."
+  },
+  {
+    "id": 27,
+    "level": 7,
+    "question": "Mida teeb return lause funktsioonis?",
+    "options": [
+      "Salvestab väärtuse muutujasse",
+      "Käivitab funktsiooni uuesti",
+      "Tagastab väärtuse ja lõpetab funktsiooni",
+      "Prindib väärtuse konsooli"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Ilma returnita tagastab funktsioon undefined."
+  },
+  {
+    "id": 28,
+    "level": 8,
+    "question": "Kuidas vältida, et kasutaja saab sisestada mitu koma (nt \"10..5\")?",
+    "options": [
+      "Kasutada parseInt()",
+      "JavaScript keelab selle automaatselt",
+      "Kasutada toFixed()",
+      "Kontrollida includes(\".\") abil, kas punkt juba sisaldub"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "includes() kontrollib, kas sõne sisaldab antud märki."
+  },
+  {
+    "id": 29,
+    "level": 8,
+    "question": "Kuidas lisada HTML-element JavaScriptiga lehele?",
+    "options": [
+      "document.newElement()",
+      "document.addElement()",
+      "document.createElement() ja appendChild()",
+      "document.insertHTML()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "createElement loob uue elemendi, appendChild lisab selle lehele."
+  },
+  {
+    "id": 30,
+    "level": 8,
+    "question": "Kuidas kontrollida, kas muutuja on arv?",
+    "options": [
+      "isNumber()",
+      "equalsNumber()",
+      "isNaN() või typeof === \"number\"",
+      "checkNumber()"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "isNaN kontrollib, kas väärtus EI OLE number."
+  },
+  {
+    "id": 31,
+    "level": 8,
+    "question": "Mida teeb switch-lause?",
+    "options": [
+      "Lülitab valgust sisse ja välja",
+      "Vahetab muutujate väärtusi",
+      "Võimaldab valida mitme variandi vahel",
+      "Katkestab tsükli"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Switch on nagu mitu if-else lauset koos."
+  },
+  {
+    "id": 32,
+    "level": 9,
+    "question": "Mida teeb typeof operaator?",
+    "options": [
+      "Teisendab muutuja tüüpi",
+      "Kontrollib, kas muutuja on defineeritud",
+      "Kustutab muutuja",
+      "Tagastab muutuja andmetüübi"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "typeof \"tere\" tagastab \"string\"."
+  },
+  {
+    "id": 33,
+    "level": 9,
+    "question": "Miks on vaja kasutaja sisend enne arvutamist arvuks teisendada?",
+    "options": [
+      "Sest muidu läheb brauser kokku",
+      "Sest arvutused tehakse serveris",
+      "Sest JavaScript ei oska teksti lugeda",
+      "Sest HTML input väljalt loetakse alati tekst, mitte arv"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Mis tüüpi on HTML input elemendi .value?"
+  },
+  {
+    "id": 34,
+    "level": 9,
+    "question": "Kuidas ümardada arv 10.567 kahe komakohani?",
+    "options": [
+      ".limit(2)",
+      ".round(2)",
+      ".toFixed(2)",
+      ".parseInt(2)"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Fixed tähendab fikseeritud komakohtade arvu."
+  },
+  {
+    "id": 35,
+    "level": 9,
+    "question": "Mis on tulemus \"5\" - 3 JavaScriptis?",
+    "options": [
+      "\"5-3\"",
+      "2",
+      "\"53\"",
+      "Error"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "Miinus operaator teisendab stringid automaatselt numbriteks."
+  },
+  {
+    "id": 36,
+    "level": 10,
+    "question": "Mis juhtub, kui kasutaja sisestab kalkulaatorisse numbri asemel teksti?",
+    "options": [
+      "Tekst teisendatakse automaatselt numbriks",
+      "Programm jookseb kokku",
+      "parseFloat() tagastab NaN ja tulemus kuvab veateate",
+      "Midagi ei juhtu, arvutus tehakse ikkagi"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "Kui teksti ei saa arvuks teisendada, on tulemuseks NaN (Not a Number)."
+  },
+  {
+    "id": 37,
+    "level": 11,
+    "question": "Milline probleem tekib, kui kasutada nuppude jaoks <div> elementi <button> asemel?",
+    "options": [
+      "<div> on aeglasem kui <button>",
+      "<div> muudab lehe välimust",
+      "<div> ei ole vaikimisi fokuseeritav ega klaviatuuriga ligipääsetav",
+      "<div> ei saa üldse klikkida"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "<button>-element on vaikimisi klaviatuuriga juhitav."
+  },
+  {
+    "id": 38,
+    "level": 11,
+    "question": "Mis on erinevus atribuudil (attribute) ja omadusel (property) DOM-is?",
+    "options": [
+      "Vahet pole, mõlemad on samad",
+      "Omadused on HTML-is, atribuudid on JavaScriptis",
+      "Atribuudid on HTML-is, omadused on JavaScripti objektidel",
+      "Atribuudid on ainult CSS-is"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "HTML elemendil on atribuudid, JavaScripti objektidel on omadused."
+  },
+  {
+    "id": 39,
+    "level": 11,
+    "question": "Miks on oluline eemaldada sündmusekuulajad, kui elementi enam pole?",
+    "options": [
+      "Et vältida mälulekkeid (memory leaks) ja tarbetut töötlust",
+      "Sest see aeglustab Interneti ühendust",
+      "Sest elemente ei saa kustutada",
+      "Sest muidu jookseb brauser kokku"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Eemaldamata kuulajad hoiavad elemente mälus."
+  },
+  {
+    "id": 40,
+    "level": 12,
+    "question": "Mis juhtub, kui kalkulaatoris ei kontrollita jagamist nulliga?",
+    "options": [
+      "Programm lõpetab töö",
+      "Brauser kuvab veateate",
+      "Tulemus on alati 0",
+      "Tulemus on Infinity, mis võib edasistes arvutustes põhjustada ootamatuid tulemusi"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Infinity pluss midagi on ikka Infinity."
+  },
+  {
+    "id": 41,
+    "level": 12,
+    "question": "Kuidas muuta kalkulaatorit nii, et see töötaks ka klaviatuuri numbriklahvidega?",
+    "options": [
+      "Kasutada setTimeout() funktsiooni",
+      "Pole võimalik, kalkulaator töötab ainult nupuvajutustega",
+      "Lisada igale numbrile eraldi keydown kuulaja",
+      "Lisada keydown sündmusekuulaja kogu lehele ja kontrollida klahvi koodi"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Sündmusekuulaja saab lisada kogu dokumendile."
+  },
+  {
+    "id": 42,
+    "level": 12,
+    "question": "Kuidas takistada veebilehel teksti valimist (selection) kasutaja poolt?",
+    "options": [
+      "JavaScript-iga blockSelect()",
+      "CSS-iga user-select: none",
+      "HTML-iga disableSelection",
+      "Seda pole võimalik takistada"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "CSS omadus user-select kontrollib teksti valimist."
+  },
+  {
+    "id": 43,
+    "level": 13,
+    "question": "Miks annab 0.1 + 0.2 JavaScriptis tulemuseks 0.30000000000000004?",
+    "options": [
+      "Sest brauser ümardab valesti",
+      "Sest 0.1 + 0.2 on tegelikult 0.30000000000000004",
+      "Sest JavaScriptis on viga",
+      "Sest ujukomaarvude täpsus on piiratud (IEEE 754 standard)"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Arvutid esitavad murde kahendsüsteemis, mis pole alati täpne."
+  },
+  {
+    "id": 44,
+    "level": 13,
+    "question": "Kuidas tagada, et klaviatuurilt numbrite sisestamine töötaks kalkulaatoris?",
+    "options": [
+      "Kuulata keydown sündmust ja kontrollida, kas sisestatud märk on number",
+      "Pole võimalik, kalkulaator töötab ainult hiirega",
+      "Kasutada <input type=\"number\">",
+      "JavaScript keelab automaatselt tähtede sisestamise"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "keydown sündmus käivitub iga klahvivajutusega."
+  },
+  {
+    "id": 45,
+    "level": 13,
+    "question": "Mida teeb e.target.value sündmuse käitlejas?",
+    "options": [
+      "Tagastab kogu lehe HTML-i",
+      "Tagastab selle elemendi väärtuse, millel sündmus toimus",
+      "Tagastab sündmuse tüübi",
+      "Tagastab brauseri nime"
+    ],
+    "correctIndex": 1,
+    "explanation": "",
+    "hint": "target viitab elemendile, mis sündmuse põhjustas."
+  },
+  {
+    "id": 46,
+    "level": 14,
+    "question": "Mis on parim viis kalkulaatori nuppude sündmuste haldamiseks ilma igale nupule eraldi onclick lisamata?",
+    "options": [
+      "Kasutada eval() kõigi nuppude jaoks",
+      "Kasutada document.write()",
+      "Kirjutada iga nupu jaoks eraldi funktsioon",
+      "Sündmuste delegeerimine (event delegation) konteinerile"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Delegeerimine tähendab, et sündmust kuulatakse ülemiselemendil."
+  },
+  {
+    "id": 47,
+    "level": 14,
+    "question": "Mida teeb this võtmesõna JavaScriptis?",
+    "options": [
+      "Viitab alati globaalsele objektile",
+      "Viitab alati funktsioonile endale",
+      "Viitab kontekstile, kus funktsioon käivitatakse",
+      "Viitab HTML dokumendile"
+    ],
+    "correctIndex": 2,
+    "explanation": "",
+    "hint": "this väärtus sõltub sellest, kuidas funktsiooni kutsutakse."
+  },
+  {
+    "id": 48,
+    "level": 14,
+    "question": "Mis on sulund (closure) JavaScriptis?",
+    "options": [
+      "Funktsioon, mis mäletab oma väliskeskkonna muutujaid ka pärast seda, kui välisfunktsioon on lõpetanud",
+      "HTML elemendi sulgemine",
+      "Massiivi elementide sulgemine",
+      "Funktsioon, mis sulgeb brauseri akna"
+    ],
+    "correctIndex": 0,
+    "explanation": "",
+    "hint": "Closure võimaldab funktsioonil \"mäletada\" oma loomiskeskkonda."
+  },
+  {
+    "id": 49,
+    "level": 15,
+    "question": "Milline probleem tekib, kui kasutada kalkulaatoris globaalseid muutujaid?",
+    "options": [
+      "Globaalsed muutujad töötavad aeglasemalt",
+      "Globaalseid muutujaid ei saa kustutada",
+      "Globaalsed muutujad ei tööta brauseris",
+      "Globaalseid muutujaid saab muuta iga funktsioon, mis võib põhjustada ootamatuid vigu"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "Globaalsed muutujad on nähtavad kogu programmi ulatuses."
+  },
+  {
+    "id": 50,
+    "level": 15,
+    "question": "Miks võib kalkulaatori kuvale tekkida kummalisi ümardamisvigu?",
+    "options": [
+      "Sest brauser ümardab valesti",
+      "Sest kalkulaator kasutab vale matemaatikat",
+      "Sest JavaScript on aeglane",
+      "Sest ujukomaarvud on kahendsüsteemis lõpmatud murrud, mida ei saa täpselt esitada"
+    ],
+    "correctIndex": 3,
+    "explanation": "",
+    "hint": "0.1 + 0.2 != 0.3 on kuulus näide."
+  }
+]
