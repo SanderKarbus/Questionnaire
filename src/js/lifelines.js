@@ -45,40 +45,45 @@ const Lifelines = {
 
   /**
    * Publik - simuleerib publiku hääletuse
-   * Õige vastus saab kõrgema protsendi, aga mitte alati 100%
+   * Arvestab ka seda, kas 50:50 on juba kaks varianti eemaldanud (optionElements abil)
    */
-  simulateAudience(question) {
+  simulateAudience(question, optionElements = []) {
     const numOptions = question.options.length;
     const correctIdx = question.correctIndex;
-
-    // Õige vastus saab 40-75% häältest
-    const correctPercentage = Math.floor(Math.random() * 36) + 40;
-
-    const remaining = 100 - correctPercentage;
-    const otherShares = [];
-    let remainingSum = remaining;
-
+    
+    // Tuvastame, millised nupud on juba 50:50 poolt elimineeritud
+    const activeIndices = [];
     for (let i = 0; i < numOptions; i++) {
-      if (i === correctIdx) continue;
-      if (i === numOptions - 1 || (i === correctIdx + 1 && i === numOptions - 1)) {
-        // Last non-correct option gets whatever's left
-        otherShares.push(remainingSum);
-      } else {
-        const share = Math.floor(Math.random() * remainingSum);
-        otherShares.push(share);
-        remainingSum -= share;
+      const btn = optionElements[i];
+      // Kui nuppu pole sisendis või see pole elimineeritud, on ta aktiivne
+      if (!btn || !btn.classList.contains('eliminated')) {
+        activeIndices.push(i);
       }
     }
 
-    const percentages = [];
-    let otherIdx = 0;
-    for (let i = 0; i < numOptions; i++) {
-      if (i === correctIdx) {
-        percentages.push(correctPercentage);
+    // Genereerime esialgsed suvalised "kaalud" (weights) ainult aktiivsetele nuppudele
+    const weights = new Array(numOptions).fill(0);
+    
+    activeIndices.forEach(idx => {
+      if (idx === correctIdx) {
+        // Õige vastus saab alati tugeva kaalu (nt 50-80)
+        weights[idx] = Math.floor(Math.random() * 31) + 50;
       } else {
-        percentages.push(otherShares[otherIdx++]);
+        // Vale vastus saab väiksema kaalu (nt 10-30)
+        weights[idx] = Math.floor(Math.random() * 21) + 10;
       }
-    }
+    });
+
+    // Arvutame kaalude kogusumma, et teisendada need täpseteks protsentideks
+    const totalWeight = weights.reduce((sum, w) => sum + w, 0);
+    
+    // Teisendame protsentideks
+    let percentages = weights.map(w => totalWeight > 0 ? Math.round((w / totalWeight) * 100) : 0);
+    
+    // Kuna ümaristamine võib summa viia 99% või 101% peale, korrigeerime vahe õige vastuse pealt
+    const currentSum = percentages.reduce((sum, p) => sum + p, 0);
+    const difference = 100 - currentSum;
+    percentages[correctIdx] += difference;
 
     return percentages;
   }
