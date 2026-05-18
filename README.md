@@ -31,6 +31,10 @@ Küsimused kontrollivad **arusaamist** — mitte ainult mälu. Näiteks küsitak
 
 Kanban-tabel: `https://github.com/users/SanderKarbus/projects/2/views/1`
 
+## Avalik demo (GitHub Pages)
+
+Rakendus: `https://sanderkarbus.github.io/Questionnaire/`
+
 ## Käivitamise juhend
 
 ### 1. Klooni repositoorium
@@ -208,7 +212,7 @@ Testid on dokumenteeritud tabelis (vt ülal). Kordamiseks kasuta `npm run genera
 | 19 | Koodistruktuur eraldatud | ✅ Olemas | generate / game / ui / lifelines |
 | 20 | AI kasutamise osa läbimõeldud | ✅ Olemas | Vt "Küsimuste genereerimise loogika" |
 | 21 | Agiilse protsessi mõistmine | ✅ Olemas | Iteratsioonid, DoD, backlog |
-| 22 | Ligipääs | ⏳ Vajab kinnitamist | Kui repo on private, lisa õpetajale ligipääs |
+| 22 | Ligipääs | ✅/⚠️ Sõltub privaatsusest | Kui repo on private, lisa õpetajale ligipääs |
 
 ## Tagasivaade (retrospective)
 
