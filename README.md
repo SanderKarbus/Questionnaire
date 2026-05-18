@@ -27,13 +27,17 @@ Küsimused kontrollivad **arusaamist** — mitte ainult mälu. Näiteks küsitak
 | GitHub Pages | — | Staatiline veebimajutus (`docs/` kaust) |
 | JetBrains Mono + Inter | — | Google Fontid (monospace + sans-serif) |
 
+## Projektijuhtimine (Kanban)
+
+Kanban-tabel: `https://github.com/users/SanderKarbus/projects/2/views/1`
+
 ## Käivitamise juhend
 
 ### 1. Klooni repositoorium
 
 ```bash
-git clone <repo-url>
-cd miljonimang
+git clone https://github.com/SanderKarbus/Questionnaire.git
+cd Questionnaire
 ```
 
 ### 2. Genereeri küsimused
@@ -160,15 +164,9 @@ Kõik testid viidi läbi automaatskriptiga:
 | JS süntaks (kõik failid) | ✓ |
 | Nõuete täitmine (11 põhinõuet) | ✓ Kõik täidetud |
 
-### Testiskript
+### Testide kordamine
 
-Testid jooksevad käsuga:
-
-```bash
-node -e "kood testidega"  # vt täpsemalt .github/test.js (tulevikus)
-```
-
-Praegu on testid dokumenteeritud arendusprotokollis ja neid saab korrata käsitsi.
+Testid on dokumenteeritud tabelis (vt ülal). Kordamiseks kasuta `npm run generate` ja käivita rakendus lokaalselt.
 
 ## Product backlog (kasutajalood)
 
@@ -182,23 +180,25 @@ Praegu on testid dokumenteeritud arendusprotokollis ja neid saab korrata käsits
 | US-006 | Kasutajana tahan, et küsimused ei korduks ühe mängu jooksul. | Kõrge | Fisher-Yates segab ja valib 15 unikaalset küsimust. |
 | US-007 | Kasutajana tahan, et uue ülesande lisamine oleks lihtne. | Keskmine | Lisa kaust input/ + assignment.md + lahendus → käivita npm run generate. |
 | US-008 | Kasutajana tahan, et rakendus näeks hea välja ja oleks mugav kasutada. | Keskmine | Dark teema, glassmorphism, bento grid, responsive. |
+| US-009 | Kasutajana tahan, et koodiblokid oleksid süntaksivärvitud. | Madal | Prism.js või Highlight.js lisatud. |
+| US-010 | Kasutajana tahan, et tulemused salvestatakse. | Madal | localStorage + viimased 5 tulemust. |
 
 ## Nõuete täitmise ülevaade
 
 | # | Kriteerium | Staatus | Märkused |
 |---|-----------|---------|----------|
-| 1 | GitHubi repo + kood | ⏳ Hilisemaks | Repo luuakse enne esitamist |
+| 1 | GitHubi repo + kood | ✅ Olemas | https://github.com/SanderKarbus/Questionnaire |
 | 2 | README (kirjeldus, juhised, tehnoloogiad, AI loogika, protsess) | ✅ Olemas | Kõik alapealkirjad täidetud |
 | 3 | AI-le saadetav prompt | ✅ Olemas | `prompts/question-generation.md` |
-| 4 | Link Kanban-tabelisse | ⏳ Hilisemaks | GitHub Projects peale repo loomist |
-| 5 | Kanbani etapid | ⏳ Hilisemaks | Backlog → Todo → In progress → Review → Done |
+| 4 | Link Kanban-tabelisse | ✅ Olemas | https://github.com/users/SanderKarbus/projects/2/views/1 |
+| 5 | Kanbani etapid | ✅ Olemas | Backlog → Todo → In Progress → Review/Test → Done |
 | 6 | Product backlog kasutajalugudega | ✅ Olemas | Vt jaotist "Product backlog" |
 | 7 | Kasutajalood kujul "Kasutajana tahan..." | ✅ Olemas | US-001 kuni US-008 |
 | 8 | Vastuvõtutingimused | ✅ Olemas | Igal kasutajalooyl kirjas |
 | 9 | Funktsionaalsused seotud kasutajalooga | ✅ Olemas | Iga funktsioon viidatud US-idena |
 | 10 | Iteratiivne arendus | ✅ Olemas | 12 sammu, igaüks testitud |
 | 11 | Arendusjärjekord põhjendatud | ✅ Olemas | Vt "Arendusprotsess" |
-| 12 | Sisukad commit'id | ⏳ Hilisemaks | Tekivad repo loomisel |
+| 12 | Sisukad commit'id | ✅ Olemas | 5 loogilist commit'i |
 | 13 | Definition of Done | ✅ Olemas | Vt jaotist "Definition of Done" |
 | 14 | Testimise tulemus dokumenteeritud | ✅ Olemas | Vt jaotist "Testimine" |
 | 15 | Nõuete täitmise ülevaade | ✅ Olemas | See tabel |
@@ -208,7 +208,7 @@ Praegu on testid dokumenteeritud arendusprotokollis ja neid saab korrata käsits
 | 19 | Koodistruktuur eraldatud | ✅ Olemas | generate / game / ui / lifelines |
 | 20 | AI kasutamise osa läbimõeldud | ✅ Olemas | Vt "Küsimuste genereerimise loogika" |
 | 21 | Agiilse protsessi mõistmine | ✅ Olemas | Iteratsioonid, DoD, backlog |
-| 22 | Ligipääs | ⏳ Hilisemaks | GitHubi repo privaatsus |
+| 22 | Ligipääs | ⏳ Vajab kinnitamist | Kui repo on private, lisa õpetajale ligipääs |
 
 ## Tagasivaade (retrospective)
 
