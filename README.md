@@ -141,13 +141,9 @@ Iga samm lõppes testimisega:
 
 Ülesanne loetakse valmis, kui:
 
-- [ ] Kood on kirjutatud ja järgib projekti stiili (ES6, ühtsed nimetused)
-- [ ] Kood on süntaksilt korrektne (ei esine JS vigu konsoolis)
-- [ ] Funktsionaalsus on testitud käsitsi või automaatselt
-- [ ] Vastuvõtutingimused (kui on) on täidetud
-- [ ] Uus kood ei murra olemasolevat funktsionaalsust
-- [ ] Muudatused on sünkroonitud `docs/` kausta
-- [ ] README on vajadusel uuendatud
+- [ ] Funktsionaalsus vastab vastuvõtutingimustele ja ei murra olemasolevat
+- [ ] Kood on süntaksilt korrektne ja testitud (käsitsi või automaatselt)
+- [ ] docs/ ja README on vajadusel uuendatud
 
 ## Testimine
 
