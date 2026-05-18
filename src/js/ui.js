@@ -81,7 +81,6 @@ const UI = {
     };
     const meta = cardMeta[assignment.id] || { icon: '📝' };
 
-    // Fetch assignment.md and first solution file
     let description = '';
     let solutionName = '';
     let solutionContent = '';
@@ -90,19 +89,6 @@ const UI = {
       if (mdRes.ok) description = await mdRes.text();
     } catch (_) {}
 
-    // Try to find a solution file (.js, .py, etc.)
-    const codeExts = ['.js', '.py', '.test.js', '.spec.js'];
-    for (const ext of codeExts) {
-      try {
-        const res = await fetch('data/assignments/' + assignment.id + '/functions' + ext);
-        if (res.ok) {
-          const code = await res.text();
-          // Try to find first .test.js or main.py
-          continue;
-        }
-      } catch (_) {}
-    }
-    // Try common names
     for (const name of ['functions.js', 'functions.test.js', 'main.py', 'index.js', 'solution.js', 'app.js', 'style.css']) {
       try {
         const res = await fetch('data/assignments/' + assignment.id + '/' + name);
@@ -114,7 +100,6 @@ const UI = {
       } catch (_) {}
     }
 
-    // Parse description from markdown (strip # heading, keep first paragraph)
     const descLines = description.split('\n').filter(l => l.trim() && !l.startsWith('#'));
     const shortDesc = descLines.slice(0, 3).join(' ').trim();
 
@@ -163,7 +148,9 @@ const UI = {
 
     const state = Game.getState();
     const qNum = state.currentQuestionIndex + 1;
-    const points = POINTS[qNum];
+    
+    // Võtame skoorid turvaliselt statest, et ei crashiks globaalse POINTS puudumisel
+    const currentScore = state.score;
 
     this.appEl.innerHTML = `
       <div class="container game-container">
@@ -171,20 +158,14 @@ const UI = {
         <div class="game-header">
           <button class="btn-quit" id="btn-quit">Lõpeta mäng</button>
           <div class="question-counter">Küsimus ${qNum} / 15</div>
-          <div class="score-display">${points.toLocaleString('et-EE')} punkti</div>
+          <div class="score-display">Skoor: ${currentScore.toLocaleString('et-EE')} punkti</div>
         </div>
 
         <!-- Lifelines -->
         <div class="lifelines" id="lifelines">
-          <button class="lifeline-btn" id="ll-50" ${state.lifelines.fiftyFifty ? '' : 'disabled'}>
-            <span class="ll-icon">50:50</span>
-          </button>
-          <button class="lifeline-btn" id="ll-hint" ${state.lifelines.hint ? '' : 'disabled'}>
-            <span class="ll-icon">Vihje</span>
-          </button>
-          <button class="lifeline-btn" id="ll-audience" ${state.lifelines.audience ? '' : 'disabled'}>
-            <span class="ll-icon">Publik</span>
-          </button>
+          <button class="lifeline-btn" id="ll-50"><span class="ll-icon">50:50</span></button>
+          <button class="lifeline-btn" id="ll-hint"><span class="ll-icon">Vihje</span></button>
+          <button class="lifeline-btn" id="ll-audience"><span class="ll-icon">Publik</span></button>
         </div>
 
         <!-- Question -->
@@ -227,7 +208,7 @@ const UI = {
       Game.quitGame();
     });
 
-    // Lifelines
+    // Lifeline 50:50
     document.getElementById('ll-50').addEventListener('click', () => {
       const state = Game.getState();
       if (!state.lifelines.fiftyFifty) return;
@@ -237,6 +218,7 @@ const UI = {
       this.updateLifelineButtons();
     });
 
+    // Lifeline Hint
     document.getElementById('ll-hint').addEventListener('click', () => {
       const state = Game.getState();
       if (!state.lifelines.hint) return;
@@ -246,11 +228,13 @@ const UI = {
       this.updateLifelineButtons();
     });
 
+    // Lifeline Audience
     document.getElementById('ll-audience').addEventListener('click', () => {
       const state = Game.getState();
       if (!state.lifelines.audience) return;
       state.lifelines.audience = false;
-      const percentages = Lifelines.simulateAudience(question);
+      const optionEls = document.querySelectorAll('.option-btn');
+      const percentages = Lifelines.simulateAudience(question, optionEls);
       this.showAudience(percentages, question);
       this.updateLifelineButtons();
     });
@@ -268,18 +252,14 @@ const UI = {
   renderAnswerFeedback(question, selectedIndex, isCorrect) {
     const options = document.querySelectorAll('.option-btn');
 
-    // Disable all options
     options.forEach(btn => { btn.disabled = true; });
 
-    // Mark correct answer green
     options[question.correctIndex].classList.add('correct');
 
-    // Mark wrong answer red (if not correct)
     if (!isCorrect) {
       options[selectedIndex].classList.add('wrong');
     }
 
-    // Show explanation
     const feedbackArea = document.getElementById('feedback-area');
     feedbackArea.innerHTML = `
       <div class="feedback ${isCorrect ? 'feedback-correct' : 'feedback-wrong'}">
@@ -298,11 +278,11 @@ const UI = {
       if (isCorrect) {
         Game.nextQuestion();
       } else {
-        // Game over, result already shown in checkAnswer
+        // PARANDATUD: Kui vastus on vale, suuname mängija siit lõpuks tulemuste lehele
+        UI.renderResult(Game.getState());
       }
     });
 
-    // Scroll to feedback
     feedbackArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
   },
 
@@ -314,7 +294,7 @@ const UI = {
     let emoji = '';
 
     if (state.won) {
-      message = 'Palju õnne! Võitsid miljon!';
+      message = 'Palju õnne! Võitsid miljoni!';
       emoji = '🏆';
     } else if (state.score === 0) {
       message = 'Kahjuks ei võitnud sa midagi. Proovi uuesti!';
@@ -324,7 +304,6 @@ const UI = {
       emoji = '💰';
     }
 
-    // Calculate answered count
     const answeredCount = state.won ? totalQuestions : state.currentQuestionIndex;
 
     this.appEl.innerHTML = `
@@ -358,7 +337,6 @@ const UI = {
   // ─── Õlekõrre UI ───────────────────────────────────────────────
 
   showHint(hintText) {
-    // Remove existing hint popup
     const existing = document.getElementById('hint-popup');
     if (existing) existing.remove();
 
@@ -384,7 +362,6 @@ const UI = {
     if (existing) existing.remove();
 
     const letters = ['A', 'B', 'C', 'D'];
-    const total = percentages.reduce((a, b) => a + b, 0);
 
     const popup = document.createElement('div');
     popup.id = 'audience-popup';
