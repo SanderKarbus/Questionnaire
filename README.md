@@ -198,7 +198,7 @@ Testid on dokumenteeritud tabelis (vt ülal). Kordamiseks kasuta `npm run genera
 | 9 | Funktsionaalsused seotud kasutajalooga | ✅ Olemas | Iga funktsioon viidatud US-idena |
 | 10 | Iteratiivne arendus | ✅ Olemas | 12 sammu, igaüks testitud |
 | 11 | Arendusjärjekord põhjendatud | ✅ Olemas | Vt "Arendusprotsess" |
-| 12 | Sisukad commit'id | ✅ Olemas | 5 loogilist commit'i |
+| 12 | Sisukad commit'id | ✅ Olemas | 8 loogilist commit'i |
 | 13 | Definition of Done | ✅ Olemas | Vt jaotist "Definition of Done" |
 | 14 | Testimise tulemus dokumenteeritud | ✅ Olemas | Vt jaotist "Testimine" |
 | 15 | Nõuete täitmise ülevaade | ✅ Olemas | See tabel |
