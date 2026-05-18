@@ -71,14 +71,13 @@ const Game = {
 
     const pick = (pool, count) => this.shuffle(pool).slice(0, count);
 
-    const selected = [
+    // Kuna igast grupist võetakse unikaalsed segatud küsimused,
+    // siis need ongi juba õiges raskusastmete järjekorras (lihtsad -> keskmised -> rasked)
+    return [
       ...pick(easy, 5),
       ...pick(medium, 5),
       ...pick(hard, 5)
     ];
-
-    // Sorteeri raskusastme järgi (1→15)
-    return selected.sort((a, b) => a.level - b.level);
   },
 
   /**
@@ -141,6 +140,9 @@ const Game = {
    * Kontrollib vastust
    */
   checkAnswer(selectedIndex) {
+    // Kaitse topeltklikkide ja pärast mängu lõppu vastamise vastu
+    if (this.state.gameOver || this.state.answeredCorrectly) return;
+
     const question = this.getQuestion();
     if (!question) return;
 
@@ -150,7 +152,7 @@ const Game = {
       this.state.score = POINTS[this.state.currentQuestionIndex + 1];
       this.state.answeredCorrectly = true;
 
-      // Check if safe level reached
+      // Turvatasemete kontroll
       if (this.state.currentQuestionIndex + 1 === 5) {
         this.state.lastSafeScore = 1000;
       } else if (this.state.currentQuestionIndex + 1 === 10) {
@@ -177,6 +179,8 @@ const Game = {
    * Liigub järgmise küsimuse juurde
    */
   nextQuestion() {
+    if (this.state.gameOver) return;
+
     this.state.currentQuestionIndex++;
     this.state.answeredCorrectly = false;
 
@@ -194,6 +198,7 @@ const Game = {
    * Lõpetab mängu pooleli
    */
   quitGame() {
+    if (this.state.gameOver) return;
     this.state.gameOver = true;
     UI.renderResult(this.state);
   },
@@ -210,7 +215,7 @@ const Game = {
   },
 
   /**
-   * Läheb tagasi menüüsse
+   * Lähetab tagasi menüüsse
    */
   backToMenu() {
     this.state.screen = 'menu';
