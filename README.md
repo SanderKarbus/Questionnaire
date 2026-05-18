@@ -208,7 +208,7 @@ Testid on dokumenteeritud tabelis (vt ülal). Kordamiseks kasuta `npm run genera
 | 19 | Koodistruktuur eraldatud | ✅ Olemas | generate / game / ui / lifelines |
 | 20 | AI kasutamise osa läbimõeldud | ✅ Olemas | Vt "Küsimuste genereerimise loogika" |
 | 21 | Agiilse protsessi mõistmine | ✅ Olemas | Iteratsioonid, DoD, backlog |
-| 22 | Ligipääs | ✅/⚠️ Sõltub privaatsusest | Kui repo on private, lisa õpetajale ligipääs |
+| 22 | Ligipääs | ✅ Olemas | Repo on public, ligipääs tagatud |
 
 ## Tagasivaade (retrospective)
 
