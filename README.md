@@ -198,7 +198,7 @@ Testid on dokumenteeritud tabelis (vt ülal). Kordamiseks kasuta `npm run genera
 | 9 | Funktsionaalsused seotud kasutajalooga | ✅ Olemas | Iga funktsioon viidatud US-idena |
 | 10 | Iteratiivne arendus | ✅ Olemas | 12 sammu, igaüks testitud |
 | 11 | Arendusjärjekord põhjendatud | ✅ Olemas | Vt "Arendusprotsess" |
-| 12 | Sisukad commit'id | ✅ Olemas | 8 loogilist commit'i |
+| 12 | Sisukad commit'id | ✅ Olemas | 10+ loogilist commit'i |
 | 13 | Definition of Done | ✅ Olemas | Vt jaotist "Definition of Done" |
 | 14 | Testimise tulemus dokumenteeritud | ✅ Olemas | Vt jaotist "Testimine" |
 | 15 | Nõuete täitmise ülevaade | ✅ Olemas | See tabel |
@@ -221,7 +221,7 @@ Testid on dokumenteeritud tabelis (vt ülal). Kordamiseks kasuta `npm run genera
 
 ### Mis oli keeruline?
 
-- **Küsimuste koostamine** — 100+ kontseptuaalse küsimuse kirjutamine on aeganõudev ja vajab head valdkonna tundmist
+- **Küsimuste koostamine** — 100+ kontseptuaalse küsimuse kirjutamine on aeganõudev ja vajab head valdkonna tundmist - lahendatud tehisintellekti abil
 - **Küsimuste duplikaatide vältimine** — esialgne modulo-wrapping põhjustas sama küsimuse ilmumise mitmel tasemel, mida oli alguses raske märgata
 - **correctIndex viga** — topelt-shuffle oli peidetud viga, mis avaldus alles testimisel
 
